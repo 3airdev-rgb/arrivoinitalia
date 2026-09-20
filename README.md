@@ -1,29 +1,53 @@
 # Arrivo In Itália
 
-Prévia navegável da área do aluno, baseada nos quatro slides fornecidos. Aplicação estática, sem dependências de instalação.
+Plataforma de trilhas de aprendizado sobre cidadania, mudança e vida na Itália, com contas próprias de aluno e administrador.
 
-## Abrir localmente
+## Funcionalidades
 
-Execute `node preview.cjs` e abra http://127.0.0.1:4173.
+- Administração de trilhas, módulos, videoaulas e eventos.
+- Imagens de fundo das trilhas com upload, prévia e substituição.
+- Progresso por aluno e trilha, favoritos, histórico, tarefas e anotações privadas.
+- Convites de acesso, recuperação de senha por link e gestão de usuários.
+- Dúvidas dos alunos e respostas da administração.
+- Interface responsiva com a identidade Arrivo In Itália.
 
-## Incluído
+## Desenvolvimento local
 
-- Catálogo pesquisável e cartões de módulos.
-- Três trilhas: cidadania, mudança e vida na Itália.
-- Programa inicial de 24 módulos e 48 aulas planejadas.
-- Página de aula com lista lateral, favoritos, tarefas de boas-vindas, anotações e área de dúvidas em preparação.
-- Agenda com estados vazios, histórico e informações de suporte.
-- Layout responsivo e navegação por teclado.
+Requer Node.js 24 e pnpm.
 
-## Limites desta versão
+```sh
+pnpm install
+pnpm build
+node tests/seed-preview.mjs
+pnpm dev
+```
 
-Esta é uma prévia funcional da interface, não um serviço comercial completo. Não há login de alunos, cobrança, administração, banco de dados, upload/reprodução de aulas ou envio de dúvidas. Os vídeos ainda não foram gravados. Favoritos, notas, seleção de trilha e tarefas são dados locais do navegador. As barras de aulas permanecem em zero porque nenhuma videoaula foi publicada.
+Abra http://127.0.0.1:4173. O script de preparação cria apenas uma conta de teste local. Consulte `tests/seed-preview.mjs` para suas credenciais. O banco local fica em `.local/` e não é versionado.
 
-O programa é uma proposta editorial pelos temas do projeto; não constitui orientação jurídica nem uma validação do conteúdo dos documentos de referência. Antes de publicar cursos, revisar os roteiros, direitos dos materiais e informações aplicáveis.
+```sh
+pnpm test
+```
 
-## Próxima implementação
+## Estrutura
 
-Autenticação, papéis de aluno e administrador, armazenamento sincronizado por aluno, gestão do catálogo e da agenda, integração com hospedagem de vídeo e mecanismo real de conclusão/liberação das etapas. Definir cobrança antes de integrar pagamentos.
+- `public/`: interface, estilos, logo e favicon.
+- `server/`: autenticação, permissões, API e catálogo inicial.
+- `db/` e `drizzle/`: esquema e migrações do banco.
+- `scripts/`: construção e ambiente local.
+- `tests/`: testes de permissões, operação e progresso.
+- `OPERACAO.md`: orientações de uso e publicação.
+
+## Hospedagem atual
+
+A aplicação usa Worker e banco D1 na hospedagem atual. O build gera `dist/server/index.js` e copia as migrações para `dist/.openai/`. Os arquivos estáticos antigos na raiz de `dist/` e `preview.cjs` pertencem ao protótipo inicial; não são a versão atual.
+
+A adaptação para Docker e uma futura VPS Hostinger ainda não foi implementada. Não basta publicar estes arquivos como um site estático para disponibilizar as contas e o banco de dados.
+
+Este repositório contém o código, os recursos visuais e as migrações. Não contém o banco de produção, contas reais, senhas ou variáveis secretas da hospedagem. A configuração de exemplo está em `.env.example`.
+
+## Limites atuais
+
+As videoaulas são cadastradas por link YouTube, Vimeo ou MP4 HTTPS. Convites e recuperação de senha exigem compartilhamento manual do link. Ainda não há pagamentos, envio automático de e-mail ou upload direto de vídeos. O catálogo inicial contém aulas em rascunho, ainda a gravar.
 
 ## Créditos
 
