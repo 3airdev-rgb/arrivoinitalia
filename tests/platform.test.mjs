@@ -27,7 +27,16 @@ test('complete account, authorization, catalog, progress and administration life
  assert.equal((await post('/admin/records',{...lessonBody,videoUrl:'javascript:alert(1)'},admin)).status,400);
  assert.equal((await post('/admin/records',{...lessonBody,videoUrl:''},admin)).status,400);
  const lesson=await post('/admin/records',lessonBody,admin);assert.equal(lesson.status,200,JSON.stringify(lesson.body));const id=lesson.body.id;
- const track=await post('/admin/records',{kind:'track',title:'Test track',groups:[['Stage',[module.body.id]]],status:'published'},admin);assert.equal(track.status,200);
+ const image='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+jD1sAAAAASUVORK5CYII=';
+ const trackBody={kind:'track',title:'Test track',groups:[['Stage',[module.body.id]]],status:'published',backgroundImage:image};
+ const track=await post('/admin/records',trackBody,admin);assert.equal(track.status,200);
+ assert.equal((await call('/catalog',{cookie:student})).body.records.find(r=>r.id===track.body.id).backgroundImage,image);
+ assert.equal((await post('/admin/records',{...trackBody,backgroundImage:'data:image/svg+xml;base64,PHN2Zz4='},admin)).status,400);
+ assert.equal((await post('/admin/records',{...trackBody,backgroundImage:'data:image/png;base64,YmFk'},admin)).status,400);
+ assert.equal((await call('/admin/records/'+track.body.id,{method:'PUT',body:{...trackBody,backgroundImage:'',revision:1},cookie:admin})).status,200);
+ assert.equal((await call('/catalog',{cookie:student})).body.records.find(r=>r.id===track.body.id).backgroundImage,'');
+ assert.equal((await call('/admin/records/'+track.body.id,{method:'PUT',body:{...trackBody,revision:2},cookie:admin})).status,200);
+ assert.equal((await call('/catalog',{cookie:student})).body.records.find(r=>r.id===track.body.id).backgroundImage,image);
  const catalog=await call('/catalog',{cookie:student});assert(catalog.body.records.some(l=>l.id===id));
  const save=async(key,value,cookie=student)=>call('/learner',{method:'PUT',body:{key,value},cookie});
  assert.equal((await save('note:'+id,'My private note')).status,200);
