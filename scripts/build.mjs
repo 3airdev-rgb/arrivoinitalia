@@ -1,7 +1,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import {build} from 'esbuild';
-const types={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8'};
+const types={'.svg':'image/svg+xml','.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8'};
 const assets={};for(const name of await fs.readdir('public')){const ext=path.extname(name);if(types[ext])assets['/'+name]={body:await fs.readFile('public/'+name,'utf8'),type:types[ext]};}
 await fs.writeFile('server/assets.generated.js','export default '+JSON.stringify(assets)+';');
 await fs.mkdir('dist/server',{recursive:true});await fs.mkdir('dist/.openai',{recursive:true});
