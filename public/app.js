@@ -14,8 +14,24 @@ const field=(label,name,value='',type='text',required=false)=>`<label>${h(label)
 const area=(label,name,value='')=>`<label>${h(label)}<textarea name="${h(name)}">${h(value)}</textarea></label>`;
 const errorBox='<p class="form-error" role="alert"></p>';
 const select=(label,name,options,value)=>`<label>${h(label)}<select name="${h(name)}">${options.map(([v,t])=>`<option value="${h(v)}" ${v===value?'selected':''}>${h(t)}</option>`).join('')}</select></label>`;
-function frame(){document.querySelector('header .preview-label')?.remove();document.querySelector('header .avatar')?.remove();let account=document.querySelector('.account-nav');if(!account){account=document.createElement('div');account.className='account-nav';document.querySelector('header').append(account);}account.innerHTML=user?`${user.role==='admin'?'<a href="#admin">Administração</a>':''}<a class="avatar" href="#perfil">${h(user.name.split(' ')[0])}</a><button id="logout">Sair</button>`:'';document.querySelector('#logout')?.addEventListener('click',async()=>{try{await api('/auth/logout','POST',{});user=null;records=[];learning={};goto('entrar');render();}catch(e){toast(e.message);}});document.querySelector('.journeybar').classList.toggle('hidden',!user);document.querySelector('header nav').classList.toggle('hidden',!user);document.querySelector('footer small').textContent='Arrivo In Itália · Área de aprendizado';if(user)updateBar();}
-function updateBar(){const active=byKind('track').find(t=>learning['active:track']===t.id)||byKind('track')[0];document.querySelector('#active-name').textContent=active?.title||'Explore os conteúdos';document.querySelector('.active-path').href=active?'#trilha/'+active.id:'#inicio';const complete=byKind('lesson').filter(l=>learning['complete:'+l.id]===true).length;document.querySelector('#xp-count').textContent=complete*10+' XP';document.querySelector('#xp').value=complete*10%100;}
+function frame(){document.querySelector('header .preview-label')?.remove();document.querySelector('header .avatar')?.remove();let account=document.querySelector('.account-nav');if(!account){account=document.createElement('div');account.className='account-nav';document.querySelector('header').append(account);}account.innerHTML=user?`${user.role==='admin'?'<a href="#admin">Administração</a>':''}<a class="avatar" href="#perfil">${h(user.name.split(' ')[0])}</a><button id="logout">Sair</button>`:'';document.querySelector('#logout')?.addEventListener('click',async()=>{try{await api('/auth/logout','POST',{});user=null;records=[];learning={};goto('entrar');render();}catch(e){toast(e.message);}});document.querySelector('.journeybar').classList.toggle('hidden',user?.role!=='student');document.querySelector('header nav').classList.toggle('hidden',!user);document.querySelector('footer small').textContent='Arrivo In Itália · Área de aprendizado';if(user)updateBar();}
+function updateBar(){
+ const bar=document.querySelector('.journeybar');
+ bar.classList.toggle('hidden',user?.role!=='student');
+ if(user?.role!=='student')return;
+ const tracks=byKind('track');
+ const active=tracks.find(t=>learning['active:track']===t.id)||tracks[0];
+ const p=progress(active?active.groups.flatMap(g=>g[1]):[]);
+ bar.querySelector('.learner small').textContent='Sua evolução na trilha';
+ bar.querySelector('.learner strong').textContent=p.total&&p.percent===100?'Trilha concluída':p.done?'Em andamento':'Vamos começar';
+ document.querySelector('#track-progress-label').textContent=p.total?p.done+' de '+p.total+' aulas concluídas':active?'Aulas em produção':'Nenhuma trilha disponível';
+ document.querySelector('#xp-count').textContent=p.percent+'%';
+ const meter=document.querySelector('#xp');meter.value=p.percent;meter.setAttribute('aria-label','Progresso em '+(active?.title||'trilha'));
+ const menu=document.querySelector('#track-select');
+ menu.innerHTML=tracks.length?tracks.map(t=>'<option value="'+h(t.id)+'">'+h(t.title)+' · '+progress(t.groups.flatMap(g=>g[1])).percent+'%</option>').join(''):'<option value="">Nenhuma trilha disponível</option>';
+ menu.value=active?.id||'';menu.disabled=!tracks.length;
+ menu.onchange=async()=>{const id=menu.value;menu.disabled=true;try{await saveLearner('active:track',id);goto('trilha/'+id);}catch(e){updateBar();toast(e.message);}};
+}
 let navigationRegistered=false;
 async function loadCatalog(){const [c,l]=await Promise.all([api('/catalog'),api('/learner')]);records=c.records;learning=l.data;if(!navigationRegistered&&document.modelContext?.registerTool){navigationRegistered=true;try{await document.modelContext.registerTool({name:'open_learning_path',title:'Abrir trilha de aprendizado',description:'Abre uma trilha publicada disponível na conta atual, sem alterar o progresso.',inputSchema:{type:'object',properties:{path:{type:'string'}},required:['path'],additionalProperties:false},annotations:{readOnlyHint:false},execute:async input=>{if(!user||!input||!records.some(t=>t.kind==='track'&&t.id===input.path))throw new Error('Trilha indisponível');goto('trilha/'+input.path);await render();return{path:input.path};}});}catch{navigationRegistered=false;}}}
 async function saveLearner(key,value){await api('/learner','PUT',{key,value});learning[key]=value;updateBar();}

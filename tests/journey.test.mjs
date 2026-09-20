@@ -1,0 +1,27 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import vm from 'node:vm';
+test('student journey shows independent trail progress, survives reload and handles save failure',async()=>{
+ const source=fs.readFileSync('public/app.js','utf8');
+ const elements=new Map();
+ const element=id=>{if(!elements.has(id))elements.set(id,{classList:{toggle(k,v){this[k]=v;}},querySelector:element,setAttribute(){},textContent:''});return elements.get(id);};
+ const ctx=vm.createContext({document:{querySelector:element},console});
+ vm.runInContext(source.slice(source.indexOf('const h='),source.indexOf('const statusName='))+source.slice(source.indexOf('function updateBar()'),source.indexOf('let navigationRegistered='))+source.slice(source.indexOf('function progress('),source.indexOf('function poster(')),ctx);
+ vm.runInContext(`records=[{kind:'track',id:'a',title:'A',groups:[['Etapa',['m','m']]]},{kind:'track',id:'b',title:'B',groups:[['Etapa',['n']]]},{kind:'lesson',title:'Aula',id:'1',moduleId:'m'},{kind:'lesson',title:'Aula',id:'2',moduleId:'m'},{kind:'lesson',title:'Aula',id:'3',moduleId:'n'}];learning={'complete:1':true,'complete:3':true};user={role:'admin'};updateBar();`,ctx);
+ assert.equal(element('.journeybar').classList.hidden,true);
+ vm.runInContext("user={role:'student'};updateBar()",ctx);
+ assert.equal(element('.journeybar').classList.hidden,false);
+ assert.equal(element('#xp').value,50);
+ assert.equal(element('#track-progress-label').textContent,'1 de 2 aulas concluídas');
+ ctx.goto=id=>ctx.destination=id;ctx.toast=message=>ctx.message=message;
+ vm.runInContext("async function saveLearner(key,value){learning[key]=value;updateBar()}",ctx);
+ element('#track-select').value='b';await element('#track-select').onchange();
+ assert.equal(ctx.destination,'trilha/b');assert.equal(element('#xp').value,100);
+ vm.runInContext('updateBar()',ctx);assert.equal(element('#track-select').value,'b');
+ vm.runInContext("saveLearner=async()=>{throw Error('Falha ao salvar')}",ctx);
+ element('#track-select').value='a';await element('#track-select').onchange();
+ assert.equal(element('#track-select').value,'b');assert.equal(element('#track-select').disabled,false);
+ vm.runInContext("records=[];updateBar()",ctx);
+ assert.equal(element('#xp').value,0);assert.equal(element('#track-select').disabled,true);
+});
