@@ -1,3 +1,7 @@
 .sites-runtime/
 *.tgz
 *.tar.gz
+node_modules/
+.local/
+.env
+server/assets.generated.js

@@ -1,0 +1,1083 @@
+[
+  {
+    "id": "boas-vindas",
+    "kind": "module",
+    "status": "published",
+    "body": {
+      "title": "Comece por aqui",
+      "symbol": "✦",
+      "category": "BOAS-VINDAS",
+      "description": "Conheça a plataforma e escolha por onde começar a planejar sua vida na Itália.",
+      "order": 0
+    }
+  },
+  {
+    "id": "boas-vindas-0",
+    "kind": "lesson",
+    "status": "draft",
+    "body": {
+      "title": "Sua jornada começa aqui",
+      "moduleId": "boas-vindas",
+      "order": 0,
+      "description": "",
+      "videoUrl": "",
+      "duration": 0,
+      "tasks": []
+    }
+  },
+  {
+    "id": "boas-vindas-1",
+    "kind": "lesson",
+    "status": "draft",
+    "body": {
+      "title": "Como usar as trilhas",
+      "moduleId": "boas-vindas",
+      "order": 1,
+      "description": "",
+      "videoUrl": "",
+      "duration": 0,
+      "tasks": []
+    }
+  },
+  {
+    "id": "caminhos",
+    "kind": "module",
+    "status": "published",
+    "body": {
+      "title": "Caminhos da cidadania",
+      "symbol": "⌘",
+      "category": "CIDADANIA ITALIANA",
+      "description": "Uma introdução aos temas que precisam ser avaliados antes de escolher uma via de reconhecimento.",
+      "order": 3
+    }
+  },
+  {
+    "id": "caminhos-0",
+    "kind": "lesson",
+    "status": "draft",
+    "body": {
+      "title": "Entenda seu ponto de partida",
+      "moduleId": "caminhos",
+      "order": 0,
+      "description": "",
+      "videoUrl": "",
+      "duration": 0,
+      "tasks": []
+    }
+  },
+  {
+    "id": "caminhos-1",
+    "kind": "lesson",
+    "status": "draft",
+    "body": {
+      "title": "Conheça as vias de reconhecimento",
+      "moduleId": "caminhos",
+      "order": 1,
+      "description": "",
+      "videoUrl": "",
+      "duration": 0,
+      "tasks": []
+    }
+  },
+  {
+    "id": "genealogia",
+    "kind": "module",
+    "status": "published",
+    "body": {
+      "title": "Sua história familiar",
+      "symbol": "♧",
+      "category": "DOCUMENTAÇÃO",
+      "description": "Organize as informações da sua família e prepare sua pesquisa documental.",
+      "order": 6
+    }
+  },
+  {
+    "id": "genealogia-0",
+    "kind": "lesson",
+    "status": "draft",
+    "body": {
+      "title": "Organizando a linha familiar",
+      "moduleId": "genealogia",
+      "order": 0,
+      "description": "",
+      "videoUrl": "",
+      "duration": 0,
+      "tasks": []
+    }
+  },
+  {
+    "id": "genealogia-1",
+    "kind": "lesson",
+    "status": "draft",
+    "body": {
+      "title": "Fontes para pesquisa",
+      "moduleId": "genealogia",
+      "order": 1,
+      "description": "",
+      "videoUrl": "",
+      "duration": 0,
+      "tasks": []
+    }
+  },
+  {
+    "id": "certidoes",
+    "kind": "module",
+    "status": "published",
+    "body": {
+      "title": "Certidões e documentos",
+      "symbol": "▤",
+      "category": "DOCUMENTAÇÃO",
+      "description": "Conheça o planejamento de uma pasta documental e os pontos a conferir.",
+      "order": 9
+    }
+  },
+  {
+    "id": "certidoes-0",
+    "kind": "lesson",
+    "status": "draft",
+    "body": {
+      "title": "Organização do acervo",
+      "moduleId": "certidoes",
+      "order": 0,
+      "description": "",
+      "videoUrl": "",
+      "duration": 0,
+      "tasks": []
+    }
+  },
+  {
+    "id": "certidoes-1",
+    "kind": "lesson",
+    "status": "draft",
+    "body": {
+      "title": "Conferência das informações",
+      "moduleId": "certidoes",
+      "order": 1,
+      "description": "",
+      "videoUrl": "",
+      "duration": 0,
+      "tasks": []
+    }
+  },
+  {
+    "id": "traducao",
+    "kind": "module",
+    "status": "published",
+    "body": {
+      "title": "Traduções e apostilas",
+      "symbol": "文",
+      "category": "DOCUMENTAÇÃO",
+      "description": "Entenda os temas de tradução e autenticação que fazem parte do planejamento.",
+      "order": 12
+    }
+  },
+  {
+    "id": "traducao-0",
+    "kind": "lesson",
+    "status": "draft",
+    "body": {
+      "title": "Preparando os documentos",
+      "moduleId": "traducao",
+      "order": 0,
+      "description": "",
+      "videoUrl": "",
+      "duration": 0,
+      "tasks": []
+    }
+  },
+  {
+    "id": "traducao-1",
+    "kind": "lesson",
+    "status": "draft",
+    "body": {
+      "title": "Traduções e apostilamento",
+      "moduleId": "traducao",
+      "order": 1,
+      "description": "",
+      "videoUrl": "",
+      "duration": 0,
+      "tasks": []
+    }
+  },
+  {
+    "id": "consular",
+    "kind": "module",
+    "status": "published",
+    "body": {
+      "title": "Via consular",
+      "symbol": "⌂",
+      "category": "CIDADANIA ITALIANA",
+      "description": "Conheça a estrutura do caminho consular para quem está no Brasil.",
+      "order": 15
+    }
+  },
+  {
+    "id": "consular-0",
+    "kind": "lesson",
+    "status": "draft",
+    "body": {
+      "title": "Visão geral da via consular",
+      "moduleId": "consular",
+      "order": 0,
+      "description": "",
+      "videoUrl": "",
+      "duration": 0,
+      "tasks": []
+    }
+  },
+  {
+    "id": "consular-1",
+    "kind": "lesson",
+    "status": "draft",
+    "body": {
+      "title": "Preparando o acompanhamento",
+      "moduleId": "consular",
+      "order": 1,
+      "description": "",
+      "videoUrl": "",
+      "duration": 0,
+      "tasks": []
+    }
+  },
+  {
+    "id": "judicial",
+    "kind": "module",
+    "status": "published",
+    "body": {
+      "title": "Via judicial",
+      "symbol": "⚖",
+      "category": "CIDADANIA ITALIANA",
+      "description": "Entenda os temas envolvidos em um processo judicial e na escolha de acompanhamento profissional.",
+      "order": 18
+    }
+  },
+  {
+    "id": "judicial-0",
+    "kind": "lesson",
+    "status": "draft",
+    "body": {
+      "title": "Visão geral da via judicial",
+      "moduleId": "judicial",
+      "order": 0,
+      "description": "",
+      "videoUrl": "",
+      "duration": 0,
+      "tasks": []
+    }
+  },
+  {
+    "id": "judicial-1",
+    "kind": "lesson",
+    "status": "draft",
+    "body": {
+      "title": "Documentos e acompanhamento",
+      "moduleId": "judicial",
+      "order": 1,
+      "description": "",
+      "videoUrl": "",
+      "duration": 0,
+      "tasks": []
+    }
+  },
+  {
+    "id": "administrativa",
+    "kind": "module",
+    "status": "published",
+    "body": {
+      "title": "Reconhecimento na Itália",
+      "symbol": "◇",
+      "category": "CIDADANIA ITALIANA",
+      "description": "Conheça os temas de reconhecimento na Itália e sua relação com o planejamento da mudança.",
+      "order": 21
+    }
+  },
+  {
+    "id": "administrativa-0",
+    "kind": "lesson",
+    "status": "draft",
+    "body": {
+      "title": "Visão geral da via administrativa",
+      "moduleId": "administrativa",
+      "order": 0,
+      "description": "",
+      "videoUrl": "",
+      "duration": 0,
+      "tasks": []
+    }
+  },
+  {
+    "id": "administrativa-1",
+    "kind": "lesson",
+    "status": "draft",
+    "body": {
+      "title": "Planejamento da estadia",
+      "moduleId": "administrativa",
+      "order": 1,
+      "description": "",
+      "videoUrl": "",
+      "duration": 0,
+      "tasks": []
+    }
+  },
+  {
+    "id": "aire",
+    "kind": "module",
+    "status": "published",
+    "body": {
+      "title": "AIRE e vida no exterior",
+      "symbol": "◎",
+      "category": "APÓS O RECONHECIMENTO",
+      "description": "Prepare-se para aprender sobre cadastro e manutenção de informações de residência no exterior.",
+      "order": 24
+    }
+  },
+  {
+    "id": "aire-0",
+    "kind": "lesson",
+    "status": "draft",
+    "body": {
+      "title": "Conhecendo o AIRE",
+      "moduleId": "aire",
+      "order": 0,
+      "description": "",
+      "videoUrl": "",
+      "duration": 0,
+      "tasks": []
+    }
+  },
+  {
+    "id": "aire-1",
+    "kind": "lesson",
+    "status": "draft",
+    "body": {
+      "title": "Organizando suas atualizações",
+      "moduleId": "aire",
+      "order": 1,
+      "description": "",
+      "videoUrl": "",
+      "duration": 0,
+      "tasks": []
+    }
+  },
+  {
+    "id": "passaporte",
+    "kind": "module",
+    "status": "published",
+    "body": {
+      "title": "Passaporte italiano",
+      "symbol": "▣",
+      "category": "APÓS O RECONHECIMENTO",
+      "description": "Uma introdução à organização para solicitar documentos após o reconhecimento.",
+      "order": 27
+    }
+  },
+  {
+    "id": "passaporte-0",
+    "kind": "lesson",
+    "status": "draft",
+    "body": {
+      "title": "Planejamento da solicitação",
+      "moduleId": "passaporte",
+      "order": 0,
+      "description": "",
+      "videoUrl": "",
+      "duration": 0,
+      "tasks": []
+    }
+  },
+  {
+    "id": "passaporte-1",
+    "kind": "lesson",
+    "status": "draft",
+    "body": {
+      "title": "Organizando os próximos passos",
+      "moduleId": "passaporte",
+      "order": 1,
+      "description": "",
+      "videoUrl": "",
+      "duration": 0,
+      "tasks": []
+    }
+  },
+  {
+    "id": "regioes",
+    "kind": "module",
+    "status": "published",
+    "body": {
+      "title": "Onde morar na Itália?",
+      "symbol": "⌖",
+      "category": "PLANEJE SUA MUDANÇA",
+      "description": "Defina suas prioridades: rotina, clima, mobilidade, trabalho e proximidade da sua rede de apoio.",
+      "order": 30
+    }
+  },
+  {
+    "id": "regioes-0",
+    "kind": "lesson",
+    "status": "draft",
+    "body": {
+      "title": "O que importa para sua escolha",
+      "moduleId": "regioes",
+      "order": 0,
+      "description": "",
+      "videoUrl": "",
+      "duration": 0,
+      "tasks": []
+    }
+  },
+  {
+    "id": "regioes-1",
+    "kind": "lesson",
+    "status": "draft",
+    "body": {
+      "title": "Comparando regiões e cidades",
+      "moduleId": "regioes",
+      "order": 1,
+      "description": "",
+      "videoUrl": "",
+      "duration": 0,
+      "tasks": []
+    }
+  },
+  {
+    "id": "orcamento",
+    "kind": "module",
+    "status": "published",
+    "body": {
+      "title": "Planejamento financeiro",
+      "symbol": "€",
+      "category": "PLANEJE SUA MUDANÇA",
+      "description": "Organize as categorias de custos para elaborar seu próprio plano de mudança.",
+      "order": 33
+    }
+  },
+  {
+    "id": "orcamento-0",
+    "kind": "lesson",
+    "status": "draft",
+    "body": {
+      "title": "Categorias do orçamento",
+      "moduleId": "orcamento",
+      "order": 0,
+      "description": "",
+      "videoUrl": "",
+      "duration": 0,
+      "tasks": []
+    }
+  },
+  {
+    "id": "orcamento-1",
+    "kind": "lesson",
+    "status": "draft",
+    "body": {
+      "title": "Construindo uma reserva",
+      "moduleId": "orcamento",
+      "order": 1,
+      "description": "",
+      "videoUrl": "",
+      "duration": 0,
+      "tasks": []
+    }
+  },
+  {
+    "id": "moradia",
+    "kind": "module",
+    "status": "published",
+    "body": {
+      "title": "Encontrando seu lar",
+      "symbol": "⌂",
+      "category": "CHEGADA À ITÁLIA",
+      "description": "Prepare sua busca por moradia a partir das necessidades da sua família.",
+      "order": 36
+    }
+  },
+  {
+    "id": "moradia-0",
+    "kind": "lesson",
+    "status": "draft",
+    "body": {
+      "title": "Preparando a busca por moradia",
+      "moduleId": "moradia",
+      "order": 0,
+      "description": "",
+      "videoUrl": "",
+      "duration": 0,
+      "tasks": []
+    }
+  },
+  {
+    "id": "moradia-1",
+    "kind": "lesson",
+    "status": "draft",
+    "body": {
+      "title": "Pontos para avaliar em um imóvel",
+      "moduleId": "moradia",
+      "order": 1,
+      "description": "",
+      "videoUrl": "",
+      "duration": 0,
+      "tasks": []
+    }
+  },
+  {
+    "id": "documentos",
+    "kind": "module",
+    "status": "published",
+    "body": {
+      "title": "Documentos para a chegada",
+      "symbol": "▤",
+      "category": "CHEGADA À ITÁLIA",
+      "description": "Conheça os temas documentais que precisam entrar no seu planejamento.",
+      "order": 39
+    }
+  },
+  {
+    "id": "documentos-0",
+    "kind": "lesson",
+    "status": "draft",
+    "body": {
+      "title": "Sua pasta de viagem",
+      "moduleId": "documentos",
+      "order": 0,
+      "description": "",
+      "videoUrl": "",
+      "duration": 0,
+      "tasks": []
+    }
+  },
+  {
+    "id": "documentos-1",
+    "kind": "lesson",
+    "status": "draft",
+    "body": {
+      "title": "Organizando a chegada",
+      "moduleId": "documentos",
+      "order": 1,
+      "description": "",
+      "videoUrl": "",
+      "duration": 0,
+      "tasks": []
+    }
+  },
+  {
+    "id": "pets",
+    "kind": "module",
+    "status": "published",
+    "body": {
+      "title": "Meu pet vai comigo",
+      "symbol": "♡",
+      "category": "CHEGADA À ITÁLIA",
+      "description": "Organize o planejamento da viagem e a adaptação do seu animal de estimação.",
+      "order": 42
+    }
+  },
+  {
+    "id": "pets-0",
+    "kind": "lesson",
+    "status": "draft",
+    "body": {
+      "title": "Planejando a viagem do pet",
+      "moduleId": "pets",
+      "order": 0,
+      "description": "",
+      "videoUrl": "",
+      "duration": 0,
+      "tasks": []
+    }
+  },
+  {
+    "id": "pets-1",
+    "kind": "lesson",
+    "status": "draft",
+    "body": {
+      "title": "Preparação e transporte",
+      "moduleId": "pets",
+      "order": 1,
+      "description": "",
+      "videoUrl": "",
+      "duration": 0,
+      "tasks": []
+    }
+  },
+  {
+    "id": "residencia",
+    "kind": "module",
+    "status": "published",
+    "body": {
+      "title": "Residência na Itália",
+      "symbol": "⌖",
+      "category": "VIDA NA ITÁLIA",
+      "description": "Conheça os temas de registro de residência que fazem parte da chegada.",
+      "order": 45
+    }
+  },
+  {
+    "id": "residencia-0",
+    "kind": "lesson",
+    "status": "draft",
+    "body": {
+      "title": "Introdução à residência",
+      "moduleId": "residencia",
+      "order": 0,
+      "description": "",
+      "videoUrl": "",
+      "duration": 0,
+      "tasks": []
+    }
+  },
+  {
+    "id": "residencia-1",
+    "kind": "lesson",
+    "status": "draft",
+    "body": {
+      "title": "Organização dos próximos passos",
+      "moduleId": "residencia",
+      "order": 1,
+      "description": "",
+      "videoUrl": "",
+      "duration": 0,
+      "tasks": []
+    }
+  },
+  {
+    "id": "permesso",
+    "kind": "module",
+    "status": "published",
+    "body": {
+      "title": "Permesso e família",
+      "symbol": "▣",
+      "category": "VIDA NA ITÁLIA",
+      "description": "Prepare-se para estudar as questões de permanência e documentação familiar.",
+      "order": 48
+    }
+  },
+  {
+    "id": "permesso-0",
+    "kind": "lesson",
+    "status": "draft",
+    "body": {
+      "title": "Ponto de partida da família",
+      "moduleId": "permesso",
+      "order": 0,
+      "description": "",
+      "videoUrl": "",
+      "duration": 0,
+      "tasks": []
+    }
+  },
+  {
+    "id": "permesso-1",
+    "kind": "lesson",
+    "status": "draft",
+    "body": {
+      "title": "Temas de permanência e documentação",
+      "moduleId": "permesso",
+      "order": 1,
+      "description": "",
+      "videoUrl": "",
+      "duration": 0,
+      "tasks": []
+    }
+  },
+  {
+    "id": "identidade",
+    "kind": "module",
+    "status": "published",
+    "body": {
+      "title": "Identidade italiana",
+      "symbol": "▤",
+      "category": "VIDA NA ITÁLIA",
+      "description": "Conheça os temas de identidade e organização documental na Itália.",
+      "order": 51
+    }
+  },
+  {
+    "id": "identidade-0",
+    "kind": "lesson",
+    "status": "draft",
+    "body": {
+      "title": "Conhecendo a CIE",
+      "moduleId": "identidade",
+      "order": 0,
+      "description": "",
+      "videoUrl": "",
+      "duration": 0,
+      "tasks": []
+    }
+  },
+  {
+    "id": "identidade-1",
+    "kind": "lesson",
+    "status": "draft",
+    "body": {
+      "title": "Planejando seus documentos",
+      "moduleId": "identidade",
+      "order": 1,
+      "description": "",
+      "videoUrl": "",
+      "duration": 0,
+      "tasks": []
+    }
+  },
+  {
+    "id": "italiano",
+    "kind": "module",
+    "status": "published",
+    "body": {
+      "title": "Italiano para o dia a dia",
+      "symbol": "Ciao",
+      "category": "SEU NOVO CAPÍTULO",
+      "description": "Planeje o aprendizado do idioma para situações da vida cotidiana.",
+      "order": 54
+    }
+  },
+  {
+    "id": "italiano-0",
+    "kind": "lesson",
+    "status": "draft",
+    "body": {
+      "title": "Primeiras interações",
+      "moduleId": "italiano",
+      "order": 0,
+      "description": "",
+      "videoUrl": "",
+      "duration": 0,
+      "tasks": []
+    }
+  },
+  {
+    "id": "italiano-1",
+    "kind": "lesson",
+    "status": "draft",
+    "body": {
+      "title": "Construindo uma rotina de estudo",
+      "moduleId": "italiano",
+      "order": 1,
+      "description": "",
+      "videoUrl": "",
+      "duration": 0,
+      "tasks": []
+    }
+  },
+  {
+    "id": "trabalho",
+    "kind": "module",
+    "status": "published",
+    "body": {
+      "title": "Trabalhar na Itália",
+      "symbol": "↗",
+      "category": "TRABALHO E FORMAÇÃO",
+      "description": "Organize sua trajetória profissional e prepare uma estratégia de busca por trabalho.",
+      "order": 57
+    }
+  },
+  {
+    "id": "trabalho-0",
+    "kind": "lesson",
+    "status": "draft",
+    "body": {
+      "title": "Seu plano profissional",
+      "moduleId": "trabalho",
+      "order": 0,
+      "description": "",
+      "videoUrl": "",
+      "duration": 0,
+      "tasks": []
+    }
+  },
+  {
+    "id": "trabalho-1",
+    "kind": "lesson",
+    "status": "draft",
+    "body": {
+      "title": "Currículo e busca por oportunidades",
+      "moduleId": "trabalho",
+      "order": 1,
+      "description": "",
+      "videoUrl": "",
+      "duration": 0,
+      "tasks": []
+    }
+  },
+  {
+    "id": "diploma",
+    "kind": "module",
+    "status": "published",
+    "body": {
+      "title": "Diplomas e profissões",
+      "symbol": "◇",
+      "category": "TRABALHO E FORMAÇÃO",
+      "description": "Mapeie os temas de reconhecimento de formação relacionados à sua área de atuação.",
+      "order": 60
+    }
+  },
+  {
+    "id": "diploma-0",
+    "kind": "lesson",
+    "status": "draft",
+    "body": {
+      "title": "Sua formação e seus objetivos",
+      "moduleId": "diploma",
+      "order": 0,
+      "description": "",
+      "videoUrl": "",
+      "duration": 0,
+      "tasks": []
+    }
+  },
+  {
+    "id": "diploma-1",
+    "kind": "lesson",
+    "status": "draft",
+    "body": {
+      "title": "Temas de reconhecimento profissional",
+      "moduleId": "diploma",
+      "order": 1,
+      "description": "",
+      "videoUrl": "",
+      "duration": 0,
+      "tasks": []
+    }
+  },
+  {
+    "id": "escola",
+    "kind": "module",
+    "status": "published",
+    "body": {
+      "title": "Escola e adaptação",
+      "symbol": "▱",
+      "category": "VIDA EM FAMÍLIA",
+      "description": "Prepare a família para conversar sobre escola, idioma e adaptação.",
+      "order": 63
+    }
+  },
+  {
+    "id": "escola-0",
+    "kind": "lesson",
+    "status": "draft",
+    "body": {
+      "title": "Planejando os estudos dos filhos",
+      "moduleId": "escola",
+      "order": 0,
+      "description": "",
+      "videoUrl": "",
+      "duration": 0,
+      "tasks": []
+    }
+  },
+  {
+    "id": "escola-1",
+    "kind": "lesson",
+    "status": "draft",
+    "body": {
+      "title": "Adaptação escolar",
+      "moduleId": "escola",
+      "order": 1,
+      "description": "",
+      "videoUrl": "",
+      "duration": 0,
+      "tasks": []
+    }
+  },
+  {
+    "id": "saude",
+    "kind": "module",
+    "status": "published",
+    "body": {
+      "title": "Saúde e bem-estar",
+      "symbol": "+",
+      "category": "VIDA EM FAMÍLIA",
+      "description": "Inclua os cuidados de saúde e bem-estar no planejamento da mudança.",
+      "order": 66
+    }
+  },
+  {
+    "id": "saude-0",
+    "kind": "lesson",
+    "status": "draft",
+    "body": {
+      "title": "Planejamento dos cuidados",
+      "moduleId": "saude",
+      "order": 0,
+      "description": "",
+      "videoUrl": "",
+      "duration": 0,
+      "tasks": []
+    }
+  },
+  {
+    "id": "saude-1",
+    "kind": "lesson",
+    "status": "draft",
+    "body": {
+      "title": "Organizando informações de saúde",
+      "moduleId": "saude",
+      "order": 1,
+      "description": "",
+      "videoUrl": "",
+      "duration": 0,
+      "tasks": []
+    }
+  },
+  {
+    "id": "comunidade",
+    "kind": "module",
+    "status": "published",
+    "body": {
+      "title": "Uma nova rotina",
+      "symbol": "♡",
+      "category": "VIDA EM FAMÍLIA",
+      "description": "Pense em formas de criar vínculos e organizar uma rotina no novo país.",
+      "order": 69
+    }
+  },
+  {
+    "id": "comunidade-0",
+    "kind": "lesson",
+    "status": "draft",
+    "body": {
+      "title": "Sua rede de apoio",
+      "moduleId": "comunidade",
+      "order": 0,
+      "description": "",
+      "videoUrl": "",
+      "duration": 0,
+      "tasks": []
+    }
+  },
+  {
+    "id": "comunidade-1",
+    "kind": "lesson",
+    "status": "draft",
+    "body": {
+      "title": "Construindo novos vínculos",
+      "moduleId": "comunidade",
+      "order": 1,
+      "description": "",
+      "videoUrl": "",
+      "duration": 0,
+      "tasks": []
+    }
+  },
+  {
+    "id": "cidadania",
+    "kind": "track",
+    "status": "published",
+    "body": {
+      "id": "cidadania",
+      "name": "Reconhecer minha cidadania",
+      "tag": "DA ORIGEM AO RECONHECIMENTO",
+      "description": "Entenda os caminhos possíveis e organize cada etapa da sua jornada de cidadania italiana.",
+      "groups": [
+        [
+          "Seu ponto de partida",
+          [
+            "boas-vindas",
+            "caminhos"
+          ]
+        ],
+        [
+          "Prepare sua documentação",
+          [
+            "genealogia",
+            "certidoes",
+            "traducao"
+          ]
+        ],
+        [
+          "Conheça as vias de reconhecimento",
+          [
+            "consular",
+            "judicial",
+            "administrativa"
+          ]
+        ],
+        [
+          "Depois do reconhecimento",
+          [
+            "aire",
+            "passaporte"
+          ]
+        ]
+      ],
+      "title": "Reconhecer minha cidadania",
+      "order": 0
+    }
+  },
+  {
+    "id": "mudanca",
+    "kind": "track",
+    "status": "published",
+    "body": {
+      "id": "mudanca",
+      "name": "Planejar minha mudança",
+      "tag": "DO BRASIL À ITÁLIA",
+      "description": "Prepare sua chegada: região, moradia, documentação e os primeiros passos em um novo país.",
+      "groups": [
+        [
+          "Planejamento da mudança",
+          [
+            "boas-vindas",
+            "regioes",
+            "orcamento"
+          ]
+        ],
+        [
+          "Organize sua chegada",
+          [
+            "moradia",
+            "documentos",
+            "pets"
+          ]
+        ],
+        [
+          "Estabeleça sua residência",
+          [
+            "residencia",
+            "permesso",
+            "identidade"
+          ]
+        ]
+      ],
+      "title": "Planejar minha mudança",
+      "order": 1
+    }
+  },
+  {
+    "id": "vida",
+    "kind": "track",
+    "status": "published",
+    "body": {
+      "id": "vida",
+      "name": "Construir minha vida na Itália",
+      "tag": "SEU NOVO CAPÍTULO",
+      "description": "Explore trabalho, estudos e vida em família para construir sua rotina na Itália.",
+      "groups": [
+        [
+          "Prepare seu novo começo",
+          [
+            "boas-vindas",
+            "italiano"
+          ]
+        ],
+        [
+          "Trabalho e formação",
+          [
+            "trabalho",
+            "diploma"
+          ]
+        ],
+        [
+          "Vida em família",
+          [
+            "escola",
+            "saude",
+            "comunidade"
+          ]
+        ]
+      ],
+      "title": "Construir minha vida na Itália",
+      "order": 2
+    }
+  }
+]
