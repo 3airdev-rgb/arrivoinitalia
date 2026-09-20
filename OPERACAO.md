@@ -1,4 +1,4 @@
-# Partiu Itália — perfis e administração
+# Arrivo In Itália — perfis e administração
 
 Esta versão substitui a prévia estática descrita originalmente no README. Possui contas próprias e persistência no D1.
 
