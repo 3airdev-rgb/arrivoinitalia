@@ -1,0 +1,32 @@
+/* Soft Italian tricolor on page surfaces; course artwork keeps its own palette. */
+:root{--blue:#34765c;--muted:#68716d;--line:#dbe6df;color:#2e3933;background:#f6f8f5}
+body{background:linear-gradient(105deg,#e5f0e9 0%,#f5f8f4 38%,#fcfbf8 58%,#f7e9e8 100%)}
+header{background:linear-gradient(100deg,#edf5efee,#fffefbee 55%,#f9eeedee);border-bottom-color:#e1e7df}
+nav a{color:#646e68}nav a.selected{color:#34765c;border-color:#579b78}
+.brandmark{background:#4a886b}.flag{color:transparent;background:linear-gradient(90deg,#559373 0 33%,#fff 33% 66%,#c98080 66%);background-clip:text;-webkit-background-clip:text}
+.preview-label{color:#8d5556;background:#f4dfdf}
+.avatar{background:#f3dedc;color:#955756}.mini-avatar{background:#deeee3;color:#397353}
+.journeybar{background:#ffffff80;border-color:#dfe7e0}
+.active-path{background:#fffefa;border-color:#dfe7df;box-shadow:0 2px 5px #35433706}
+progress,progress::-webkit-progress-bar{background:#e1e8e1}
+progress::-webkit-progress-value{background:linear-gradient(90deg,#a5d2af,#4d916c)}
+progress::-moz-progress-bar{background:#4d916c}
+.searchbar{background:#fffefa;border-color:#e1e7dc;box-shadow:0 8px 22px #394b3914}
+.searchbar input{color:#35423a}.searchbar button,.primary{box-shadow:0 4px 9px #34765c20}
+.play-small{background:#e0efe5;color:#34765c}
+.resume,.task,.empty,.support-grid article{background:#fffefbd9;border-color:#fff;box-shadow:0 5px 12px #3d4a3908}
+.catalog summary:before{color:#84948a}
+.outline{border-color:#cdded1;background:#fffefbcc}
+.path{border-color:#cad8cd}.stage:before{border-color:#f3f7f1;background:#a2b9a9}
+.stage h2{background:#fffefbc9}.node:not(:last-child):after{background:#b6c6ba}
+.node-circle{background:#e8ede7;color:#8b9b90;border-color:#fafcf8;box-shadow:0 5px 0 #cbd6cc}
+.node.current .node-circle{background:#4f926e;border-color:#b4d8bd;box-shadow:0 5px 0 #397451}
+.tabs button{background:#fffefbb3;color:#65716a}.tabs button[aria-selected=true]{color:#34765c;background:#fffefa;box-shadow:0 3px 8px #38453709}
+textarea{background:#fffefbde;border-color:#dce5da;color:#354239}
+.lesson-sidebar{background:#fffefbd9;border-color:#e3e9df}.lesson-sidebar details{border-color:#dce6dd;background:#fffefb}
+.lesson-row{border-color:#e4eae1}.lesson-row.selected{background:#e3f0e6;color:#326a4c}
+.empty .empty-icon{color:#8aae96}
+footer{background:linear-gradient(100deg,#edf5efcc,#fffefbcc 55%,#f9eeedcc);border-color:#e0e7dd;color:#718076}
+.brandtext{color:#527861}.close{background:#eaf0e8;color:#45634e}
+#toast{background:#345442}
+button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,summary:focus-visible{outline-color:#286544}
