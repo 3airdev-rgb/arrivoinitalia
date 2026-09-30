@@ -22,7 +22,7 @@ node tests/seed-preview.mjs
 pnpm dev
 ```
 
-Abra http://127.0.0.1:4173. O script de preparação cria apenas uma conta de teste local. Consulte `tests/seed-preview.mjs` para suas credenciais. O banco local fica em `.local/` e não é versionado.
+Abra http://127.0.0.1:4173. O script de preparação cria apenas uma conta de teste local. Consulte `tests/seed-preview.mjs` para suas credenciais. O banco local fica em `arrivo.sqlite` e não é versionado.
 
 ```sh
 pnpm test
@@ -39,7 +39,7 @@ pnpm test
 
 ## Hospedagem atual
 
-A aplicação usa Worker e banco D1 na hospedagem atual. O build gera `dist/server/index.js` e copia as migrações para `dist/.openai/`. Os arquivos estáticos antigos na raiz de `dist/` e `preview.cjs` pertencem ao protótipo inicial; não são a versão atual.
+A aplicação usa Worker e banco D1 na hospedagem atual. O build gera `dist/server/index.js` e copia as migrações para `dist/.openai/`.
 
 A adaptação para Docker e uma futura VPS Hostinger ainda não foi implementada. Não basta publicar estes arquivos como um site estático para disponibilizar as contas e o banco de dados.
 
@@ -52,3 +52,13 @@ As videoaulas são cadastradas por link YouTube, Vimeo ou MP4 HTTPS. Convites e 
 ## Créditos
 
 Foto de Val d’Orcia: Salvatore Gerace, Wikimedia Commons, CC BY 2.0, utilizada com recorte. Fonte: https://commons.wikimedia.org/wiki/File:Landscape_in_Val_d%27Orcia.jpg
+
+## Docker Desktop (desenvolvimento local)
+
+O banco SQLite local fica em `arrivo.sqlite`. O Docker Compose executa a aplicação e monta esse arquivo para manter os dados entre reinicializações.
+
+```sh
+docker compose up -d --build
+```
+
+Abra http://127.0.0.1:4173. Para parar: `docker compose down`. Para criar a conta inicial em um banco novo, execute `docker compose exec arrivo node tests/seed-preview.mjs`.

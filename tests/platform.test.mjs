@@ -4,8 +4,8 @@ import {database} from '../scripts/d1-local.mjs';
 import worker from '../dist/server/index.js';
 
 test('complete account, authorization, catalog, progress and administration lifecycle',async t=>{
- const DB=database(),env={DB,OWNER_EMAIL:'owner@example.test'},origin='https://partiu.example.test';
- const call=async(path,{method='GET',body,cookie,owner=false,csrf=true}={})=>{const headers=new Headers({'Content-Type':'application/json','cf-connecting-ip':'127.0.0.1'});if(csrf){headers.set('Origin',origin);headers.set('X-Partiu-Request','1');}if(cookie)headers.set('Cookie',cookie);if(owner)headers.set('oai-authenticated-user-email','owner@example.test');const response=await worker.fetch(new Request(origin+'/api'+path,{method,headers,body:body===undefined?undefined:JSON.stringify(body)}),env);return{status:response.status,body:await response.json(),cookie:response.headers.get('set-cookie')?.split(';')[0],headers:response.headers};};
+ const DB=database(),env={DB,OWNER_EMAIL:'owner@example.test'},origin='https://arrivo.example.test';
+ const call=async(path,{method='GET',body,cookie,owner=false,csrf=true}={})=>{const headers=new Headers({'Content-Type':'application/json','cf-connecting-ip':'127.0.0.1'});if(csrf){headers.set('Origin',origin);headers.set('X-Arrivo-Request','1');}if(cookie)headers.set('Cookie',cookie);if(owner)headers.set('oai-authenticated-user-email','owner@example.test');const response=await worker.fetch(new Request(origin+'/api'+path,{method,headers,body:body===undefined?undefined:JSON.stringify(body)}),env);return{status:response.status,body:await response.json(),cookie:response.headers.get('set-cookie')?.split(';')[0],headers:response.headers};};
  const post=(path,body,cookie,extra={})=>call(path,{method:'POST',body,cookie,...extra});
  assert.equal((await call('/catalog')).status,401);
  assert.equal((await call('/auth/status',{owner:true})).body.setup,true);

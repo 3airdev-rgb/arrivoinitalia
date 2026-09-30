@@ -19,9 +19,9 @@ Abra o site privado usando a conta proprietária. A tela oferece configuração 
 
 Execute `pnpm install`, `pnpm build` e `pnpm test`. Gere migrações com `pnpm db:generate` somente após mudar o esquema. Não altere migrações já aplicadas.
 
-`node tests/seed-preview.mjs` cria uma conta apenas no banco local `.local/partiu.sqlite`; `node scripts/dev.mjs` abre http://127.0.0.1:4173. As credenciais locais de teste não são incluídas no Worker ou banco de produção.
+`node tests/seed-preview.mjs` cria uma conta apenas no banco local `arrivo.sqlite`; `node scripts/dev.mjs` abre http://127.0.0.1:4173. As credenciais locais de teste não são incluídas no Worker ou banco de produção.
 
-O Worker gerado em `dist/server/index.js` incorpora `public/`. Publique apenas `dist/server/` e `dist/.openai/`, incluindo migrações. Os arquivos estáticos antigos em `dist/` não são usados nem incluídos na nova publicação. A configuração inicial usa a variável de hospedagem `OWNER_EMAIL` e a identidade encaminhada pelo serviço, não um e-mail declarado pelo navegador.
+O Worker gerado em `dist/server/index.js` incorpora `public/`. Publique apenas `dist/server/` e `dist/.openai/`, incluindo migrações. A configuração inicial usa a variável de hospedagem `OWNER_EMAIL` e a identidade encaminhada pelo serviço, não um e-mail declarado pelo navegador.
 
 ## Segurança e limites
 
