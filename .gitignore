@@ -1,12 +1,6 @@
-.sites-runtime/
-*.tgz
-*.tar.gz
 node_modules/
 .local/
 .env
-server/assets.generated.js
-
-
-/arrivo.sqlite
-/arrivo.sqlite-wal
-/arrivo.sqlite-shm
+*.tgz
+*.tar.gz
+/data/

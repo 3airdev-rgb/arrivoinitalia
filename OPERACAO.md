@@ -1,10 +1,20 @@
 # Arrivo In Itália — perfis e administração
 
-Esta versão substitui a prévia estática descrita originalmente no README. Possui contas próprias e persistência no D1.
-
 ## Primeiro acesso
 
-Abra o site privado usando a conta proprietária. A tela oferece configuração inicial de nome e senha. Depois, use Administração. Os 24 módulos e as 3 trilhas são importados; as 48 aulas planejadas começam como rascunhos sem vídeo. Nenhuma senha real foi definida pelo agente.
+A conta proprietária é criada pelo terminal do servidor, nunca pela web:
+
+```sh
+docker compose exec arrivo node server/cli.js create-admin voce@exemplo.com "Seu Nome"
+```
+
+A senha é pedida no terminal. O comando só funciona com o banco vazio e importa o catálogo inicial: 3 trilhas, 24 módulos e 48 aulas planejadas, que começam como rascunhos sem vídeo. Depois, entre no site e use Administração.
+
+Se perder a senha da conta proprietária:
+
+```sh
+docker compose exec arrivo node server/cli.js reset-password voce@exemplo.com
+```
 
 ## Operação
 
@@ -17,18 +27,14 @@ Abra o site privado usando a conta proprietária. A tela oferece configuração 
 
 ## Desenvolvimento
 
-Execute `pnpm install`, `pnpm build` e `pnpm test`. Gere migrações com `pnpm db:generate` somente após mudar o esquema. Não altere migrações já aplicadas.
-
-`node tests/seed-preview.mjs` cria uma conta apenas no banco local `arrivo.sqlite`; `node scripts/dev.mjs` abre http://127.0.0.1:4173. As credenciais locais de teste não são incluídas no Worker ou banco de produção.
-
-O Worker gerado em `dist/server/index.js` incorpora `public/`. Publique apenas `dist/server/` e `dist/.openai/`, incluindo migrações. A configuração inicial usa a variável de hospedagem `OWNER_EMAIL` e a identidade encaminhada pelo serviço, não um e-mail declarado pelo navegador.
+Execute `corepack pnpm install` e `corepack pnpm test`. Gere migrações com `corepack pnpm db:generate` somente após mudar `db/schema.ts`. Não altere migrações já aplicadas.
 
 ## Segurança e limites
 
-Senhas com bcrypt custo 12, mínimo de 12 caracteres e máximo de 72 bytes. Tokens de sessão e convite aleatórios armazenados como SHA-256; cookies Secure/HttpOnly/SameSite=Strict; expiração de 24 horas; validação de origem nas escritas; limites de tentativas no banco; saída HTML escapada; controle de revisão para edições concorrentes. Autorizações são verificadas no servidor e dados pessoais são filtrados por usuário autenticado.
+Senhas com bcrypt custo 12, mínimo de 12 caracteres e máximo de 72 bytes. Tokens de sessão e convite aleatórios armazenados como SHA-256; cookies Secure/HttpOnly/SameSite=Strict; expiração de 24 horas; validação de origem nas escritas; limites de tentativas no banco; saída HTML escapada; controle de revisão para edições concorrentes. Autorizações são verificadas no servidor e dados pessoais são filtrados por usuário autenticado. O container roda sem privilégios de administrador e o corpo das requisições é limitado a 4 MB.
 
-Convites e recuperação geram links para entrega manual pelo administrador. Não há envio automático de e-mail, Google, pagamentos nem upload direto de vídeos. A privacidade da hospedagem permanece restrita até a abertura explícita para alunos. As anotações locais da antiga prévia não são importadas automaticamente.
+Convites e recuperação geram links para entrega manual pelo administrador. Ainda não há envio automático de e-mail nem pagamentos.
 
-O teste integrado verifica configuração única, acesso sem sessão, bloqueio de aluno em operações administrativas, origem indevida, convite de uso único, filtragem de rascunhos, validação de vídeo/agenda, conflitos de revisão, isolamento de notas, dúvidas, suspensão, recuperação e logout. Isso não substitui uma auditoria independente de segurança.
+O teste integrado verifica criação única da conta proprietária, acesso sem sessão, bloqueio de aluno em operações administrativas, origem indevida, convite de uso único, filtragem de rascunhos, validação de vídeo/agenda, conflitos de revisão, isolamento de notas, dúvidas, suspensão, recuperação, logout e o servidor HTTP. Isso não substitui uma auditoria independente de segurança.
 
 Referências: https://github.com/dcodeIO/bcrypt.js e https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html

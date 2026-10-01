@@ -4,16 +4,9 @@ services:
     container_name: arrivo-in-italia
     restart: unless-stopped
     environment:
-      ARRIVO_DB_PATH: /app/arrivo.sqlite
-      ARRIVO_HOST: 0.0.0.0
+      PUBLIC_URL: ${PUBLIC_URL:-}
+      TRUST_PROXY: ${TRUST_PROXY:-0}
     ports:
       - "127.0.0.1:4173:4173"
     volumes:
-      - type: bind
-        source: 'C:\Users\cleom\Documents\Claude_Code\ArrivoInItalia\arrivo.sqlite'
-        target: /app/arrivo.sqlite
-    healthcheck:
-      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:4173/').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
-      interval: 15s
-      timeout: 5s
-      retries: 5
+      - ./data:/data

@@ -1,6 +1,8 @@
 .git
 node_modules
 .local
+data
+tests
 *.tar.gz
-
-arrivo.sqlite*
+*.md
+.env

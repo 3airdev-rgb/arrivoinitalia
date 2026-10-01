@@ -1,19 +1,21 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {database} from '../scripts/d1-local.mjs';
-import worker from '../dist/server/index.js';
+import {database} from '../server/db.js';
+import worker,{createAdmin,resetPassword} from '../server/app.js';
 
 test('complete account, authorization, catalog, progress and administration lifecycle',async t=>{
- const DB=database(),env={DB,OWNER_EMAIL:'owner@example.test'},origin='https://arrivo.example.test';
- const call=async(path,{method='GET',body,cookie,owner=false,csrf=true}={})=>{const headers=new Headers({'Content-Type':'application/json','cf-connecting-ip':'127.0.0.1'});if(csrf){headers.set('Origin',origin);headers.set('X-Arrivo-Request','1');}if(cookie)headers.set('Cookie',cookie);if(owner)headers.set('oai-authenticated-user-email','owner@example.test');const response=await worker.fetch(new Request(origin+'/api'+path,{method,headers,body:body===undefined?undefined:JSON.stringify(body)}),env);return{status:response.status,body:await response.json(),cookie:response.headers.get('set-cookie')?.split(';')[0],headers:response.headers};};
+ const DB=database(),env={DB},origin='https://arrivo.example.test';
+ const call=async(path,{method='GET',body,cookie,csrf=true}={})=>{const headers=new Headers({'Content-Type':'application/json','x-arrivo-client-ip':'127.0.0.1'});if(csrf){headers.set('Origin',origin);headers.set('X-Arrivo-Request','1');}if(cookie)headers.set('Cookie',cookie);const response=await worker.fetch(new Request(origin+'/api'+path,{method,headers,body:body===undefined?undefined:JSON.stringify(body)}),env);return{status:response.status,body:await response.json(),cookie:response.headers.get('set-cookie')?.split(';')[0],headers:response.headers};};
  const post=(path,body,cookie,extra={})=>call(path,{method:'POST',body,cookie,...extra});
+ assert.equal((await call('/health')).status,200);
  assert.equal((await call('/catalog')).status,401);
- assert.equal((await call('/auth/status',{owner:true})).body.setup,true);
- assert.equal((await post('/auth/setup',{name:'Owner',password:'CorrectHorse2026!'})).status,403);
- const setup=await post('/auth/setup',{name:'Owner',password:'CorrectHorse2026!' },null,{owner:true});assert.equal(setup.status,200,JSON.stringify(setup.body));const admin=setup.cookie;
- assert.match(setup.headers.get('set-cookie'),/HttpOnly; Secure; SameSite=Strict/);
- assert.equal((await post('/auth/setup',{name:'Second',password:'CorrectHorse2026!'},null,{owner:true})).status,409);
- assert.equal((await call('/auth/status',{owner:true})).body.setup,false);
+ assert.equal((await post('/auth/setup',{name:'Owner',password:'CorrectHorse2026!'})).status,401);
+ await assert.rejects(createAdmin(DB,{email:'owner@example.test',name:'Owner',password:'short'}),/12 caracteres/);
+ const owner=await createAdmin(DB,{email:'Owner@Example.test',name:'Owner',password:'CorrectHorse2026!'});assert.equal(owner.email,'owner@example.test');assert.equal(owner.role,'admin');
+ await assert.rejects(createAdmin(DB,{email:'second@example.test',name:'Second',password:'CorrectHorse2026!'}),/Já existe uma conta/);
+ assert((await DB.prepare("SELECT count(*) AS n FROM records WHERE kind='track'").first()).n>0);
+ const setup=await post('/auth/login',{email:'owner@example.test',password:'CorrectHorse2026!'});assert.equal(setup.status,200,JSON.stringify(setup.body));const admin=setup.cookie;
+ assert.match(setup.headers.get('set-cookie'),/^__Host-arrivo=.*HttpOnly; Secure; SameSite=Strict/);
  assert.equal((await call('/catalog',{cookie:admin})).body.records.filter(r=>r.kind==='lesson').length,0);
  assert.equal((await post('/admin/invites',{email:'student@example.test'},admin,{csrf:false})).status,403);
  const invite=await post('/admin/invites',{email:'student@example.test',role:'student'},admin);assert.equal(invite.status,200);
@@ -68,5 +70,9 @@ test('complete account, authorization, catalog, progress and administration life
  assert((await call('/admin/audit',{cookie:admin})).body.entries.length>0);
  assert.equal((await post('/auth/logout',{},admin)).status,200);
  assert.equal((await call('/admin/records',{cookie:admin})).status,401);
+ const again=(await post('/auth/login',{email:'owner@example.test',password:'CorrectHorse2026!'})).cookie;
+ await resetPassword(DB,'owner@example.test','RecoveredOwner2026!');
+ assert.equal((await call('/admin/records',{cookie:again})).status,401);
+ assert.equal((await post('/auth/login',{email:'owner@example.test',password:'RecoveredOwner2026!'})).status,200);
  DB.raw.close();
 });

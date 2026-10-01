@@ -7,58 +7,57 @@ Plataforma de trilhas de aprendizado sobre cidadania, mudança e vida na Itália
 - Administração de trilhas, módulos, videoaulas e eventos.
 - Imagens de fundo das trilhas com upload, prévia e substituição.
 - Progresso por aluno e trilha, favoritos, histórico, tarefas e anotações privadas.
+- Planner por trilha, com etapas, prazos, custos e anexos (PDF ou imagem).
+- Fornitore: catálogo de prestadores de serviço e pedidos de agendamento.
 - Convites de acesso, recuperação de senha por link e gestão de usuários.
 - Dúvidas dos alunos e respostas da administração.
-- Interface responsiva com a identidade Arrivo In Itália.
 
 ## Desenvolvimento local
 
-Requer Node.js 24 e pnpm.
+Requer Node.js 24. As dependências são instaladas com pnpm (via `corepack pnpm`, se o pnpm não estiver instalado).
 
 ```sh
-pnpm install
-pnpm build
-node tests/seed-preview.mjs
-pnpm dev
+corepack pnpm install
+node server/cli.js create-admin voce@exemplo.com "Seu Nome"   # pede a senha; só funciona com o banco vazio
+corepack pnpm dev                                             # http://127.0.0.1:4173
+corepack pnpm test
 ```
 
-Abra http://127.0.0.1:4173. O script de preparação cria apenas uma conta de teste local. Consulte `tests/seed-preview.mjs` para suas credenciais. O banco local fica em `arrivo.sqlite` e não é versionado.
+O banco SQLite fica em `data/arrivo.sqlite` (não versionado). As migrações em `drizzle/` são aplicadas automaticamente ao iniciar.
+
+## Docker
 
 ```sh
-pnpm test
+docker compose up -d --build
+docker compose exec arrivo node server/cli.js create-admin voce@exemplo.com "Seu Nome"
 ```
+
+Abra http://127.0.0.1:4173. Os dados ficam na pasta `data/`, montada no container. Para parar: `docker compose down`.
+
+## Configuração
+
+Variáveis em `.env` (modelo em `.env.example`):
+
+- `PUBLIC_URL`: endereço público em produção (ex.: `https://arrivoinitalia.com`). Vazio no desenvolvimento.
+- `TRUST_PROXY=1`: quando estiver atrás de proxy reverso, para usar o IP real do visitante.
+- `ARRIVO_DB_PATH`, `PORT`, `HOST`: opcionais; o container já define os valores corretos.
 
 ## Estrutura
 
 - `public/`: interface, estilos, logo e favicon.
-- `server/`: autenticação, permissões, API e catálogo inicial.
-- `db/` e `drizzle/`: esquema e migrações do banco.
-- `scripts/`: construção e ambiente local.
-- `tests/`: testes de permissões, operação e progresso.
-- `OPERACAO.md`: orientações de uso e publicação.
-
-## Hospedagem atual
-
-A aplicação usa Worker e banco D1 na hospedagem atual. O build gera `dist/server/index.js` e copia as migrações para `dist/.openai/`.
-
-A adaptação para Docker e uma futura VPS Hostinger ainda não foi implementada. Não basta publicar estes arquivos como um site estático para disponibilizar as contas e o banco de dados.
-
-Este repositório contém o código, os recursos visuais e as migrações. Não contém o banco de produção, contas reais, senhas ou variáveis secretas da hospedagem. A configuração de exemplo está em `.env.example`.
+- `server/app.js`: API, autenticação, permissões e regras de negócio.
+- `server/index.js`: servidor HTTP de produção (arquivos estáticos, IP do cliente, limites).
+- `server/db.js`: acesso ao SQLite e aplicação das migrações.
+- `server/cli.js`: criação da conta administradora e redefinição de senha pelo terminal.
+- `server/seed.json`: catálogo inicial (3 trilhas, 24 módulos, 48 aulas em rascunho).
+- `db/schema.ts` e `drizzle/`: esquema e migrações (`corepack pnpm db:generate` após mudar o esquema).
+- `tests/`: testes de permissões, operação, progresso e servidor HTTP.
+- `OPERACAO.md`: orientações de uso e administração.
 
 ## Limites atuais
 
-As videoaulas são cadastradas por link YouTube, Vimeo ou MP4 HTTPS. Convites e recuperação de senha exigem compartilhamento manual do link. Ainda não há pagamentos, envio automático de e-mail ou upload direto de vídeos. O catálogo inicial contém aulas em rascunho, ainda a gravar.
+As videoaulas são cadastradas por link YouTube, Vimeo ou MP4 HTTPS. Convites e recuperação de senha exigem compartilhamento manual do link. Ainda não há pagamentos nem envio automático de e-mail. O catálogo inicial contém aulas em rascunho, ainda a gravar.
 
 ## Créditos
 
 Foto de Val d’Orcia: Salvatore Gerace, Wikimedia Commons, CC BY 2.0, utilizada com recorte. Fonte: https://commons.wikimedia.org/wiki/File:Landscape_in_Val_d%27Orcia.jpg
-
-## Docker Desktop (desenvolvimento local)
-
-O banco SQLite local fica em `arrivo.sqlite`. O Docker Compose executa a aplicação e monta esse arquivo para manter os dados entre reinicializações.
-
-```sh
-docker compose up -d --build
-```
-
-Abra http://127.0.0.1:4173. Para parar: `docker compose down`. Para criar a conta inicial em um banco novo, execute `docker compose exec arrivo node tests/seed-preview.mjs`.

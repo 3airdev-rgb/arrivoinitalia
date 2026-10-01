@@ -8,6 +8,13 @@
       "when": 1789867114708,
       "tag": "0000_sleepy_doctor_strange",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1790813831398,
+      "tag": "0001_planner_attachments_bookings",
+      "breakpoints": true
     }
   ]
 }

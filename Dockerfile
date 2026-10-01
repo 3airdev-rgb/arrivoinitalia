@@ -1,11 +1,13 @@
 FROM node:24-alpine
+ENV NODE_ENV=production HOST=0.0.0.0 PORT=4173 ARRIVO_DB_PATH=/data/arrivo.sqlite
 WORKDIR /app
-COPY package.json ./
-COPY scripts ./scripts
-COPY tests/seed-preview.mjs ./tests/seed-preview.mjs
+COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
+RUN corepack enable && pnpm install --prod --frozen-lockfile
+COPY server ./server
+COPY public ./public
 COPY drizzle ./drizzle
-COPY dist ./dist
-ENV ARRIVO_DB_PATH=/app/arrivo.sqlite
-ENV ARRIVO_HOST=0.0.0.0
+RUN mkdir -p /data && chown node:node /data
+USER node
 EXPOSE 4173
-CMD ["node", "scripts/dev.mjs"]
+HEALTHCHECK --interval=30s --timeout=5s --retries=3 CMD node -e "fetch('http://127.0.0.1:4173/api/health').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"
+CMD ["node", "server/index.js"]
