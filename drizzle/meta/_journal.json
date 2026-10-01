@@ -15,6 +15,20 @@
       "when": 1790813831398,
       "tag": "0001_planner_attachments_bookings",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1790815072358,
+      "tag": "0002_entitlements",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1790817449255,
+      "tag": "0003_orders_settings",
+      "breakpoints": true
     }
   ]
 }

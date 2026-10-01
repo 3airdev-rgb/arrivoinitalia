@@ -18,7 +18,8 @@ test('complete account, authorization, catalog, progress and administration life
  assert.match(setup.headers.get('set-cookie'),/^__Host-arrivo=.*HttpOnly; Secure; SameSite=Strict/);
  assert.equal((await call('/catalog',{cookie:admin})).body.records.filter(r=>r.kind==='lesson').length,0);
  assert.equal((await post('/admin/invites',{email:'student@example.test'},admin,{csrf:false})).status,403);
- const invite=await post('/admin/invites',{email:'student@example.test',role:'student'},admin);assert.equal(invite.status,200);
+ const nextYear=new Date(Date.now()+365*86400000).toISOString().slice(0,10);
+ const invite=await post('/admin/invites',{email:'student@example.test',role:'student',access:{courseExpires:nextYear}},admin);assert.equal(invite.status,200);
  assert.equal((await post('/auth/activate',{token:invite.body.token,name:'Student',password:'StudentPassword2026!'})).status,200);
  assert.equal((await post('/auth/activate',{token:invite.body.token,name:'Student',password:'StudentPassword2026!'})).status,400);
  const login=await post('/auth/login',{email:'student@example.test',password:'StudentPassword2026!'});assert.equal(login.status,200);const student=login.cookie;

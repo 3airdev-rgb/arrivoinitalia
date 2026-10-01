@@ -21,7 +21,7 @@ const cached=production?loadAssets():null;
 const asset=p=>(cached||loadAssets())[p];
 
 const DB=database(process.env.ARRIVO_DB_PATH||path.join(root,'data','arrivo.sqlite'));
-const env={DB,asset};
+const env={DB,asset,STRIPE_SECRET_KEY:process.env.STRIPE_SECRET_KEY||'',STRIPE_WEBHOOK_SECRET:process.env.STRIPE_WEBHOOK_SECRET||'',STRIPE_API_BASE:process.env.STRIPE_API_BASE||''};
 
 function clientIp(req){const forwarded=trustProxy?String(req.headers['x-forwarded-for']||'').split(',').map(s=>s.trim()).filter(Boolean):[];return forwarded.at(-1)||req.socket.remoteAddress||'unknown';}
 

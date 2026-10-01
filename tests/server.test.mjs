@@ -18,6 +18,9 @@ test('node server serves assets, health and API with origin checks',async t=>{
  assert.match(page.headers.get('content-security-policy'),/frame-ancestors 'none'/);
  assert.match(await page.text(),/Arrivo In Itália/);
  assert.equal((await fetch(base+'/app.js')).status,200);
+ assert.match(await (await fetch(base+'/app')).text(),/<script src="app.js"/);
+ for(const page of ['/termos','/privacidade','/compra'])assert.equal((await fetch(base+page)).status,200,page);
+ assert.equal((await fetch(base+'/nao-existe')).status,404);
  assert.equal((await fetch(base+'/favicon.jpg')).headers.get('content-type'),'image/jpeg');
  assert.equal((await fetch(base+'/../package.json')).status,404);
  assert.equal((await fetch(base+'/api/health')).status,200);

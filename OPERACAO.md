@@ -16,6 +16,22 @@ Se perder a senha da conta proprietária:
 docker compose exec arrivo node server/cli.js reset-password voce@exemplo.com
 ```
 
+## Acesso dos alunos
+
+O curso libera a plataforma até uma data de validade (normalmente 1 ano). Meu Planner e Fornitore são adicionais que vencem junto com o curso. Sem o curso ativo, o aluno consegue entrar, mas só vê o próprio perfil e um aviso de acesso inativo; o progresso e as anotações continuam guardados. Sem um adicional, a página correspondente mostra o aviso de adicional, e o servidor recusa as operações dele.
+
+- No convite de aluno, marque "Liberar acesso ao curso na ativação", escolha a validade e os adicionais.
+- Em Alunos e acessos → Gerenciar, ajuste a validade, inclua ou retire adicionais, ou remova o acesso. Cada mudança fica no histórico do aluno e no registro de ações.
+- Os dados de contato dos prestadores (e-mail e telefone) aparecem apenas para a administração.
+
+## Vendas
+
+- A página de vendas fica na raiz do site (`/`); a plataforma fica em `/app`. Termos de uso e privacidade estão em `/termos` e `/privacidade` (versões preliminares, a revisar).
+- Em Administração → Vendas, defina os preços do curso e dos adicionais, o desconto de renovação e por quantos dias após o vencimento ele vale. A renovação abre 60 dias antes do vencimento; o novo ano começa quando o atual termina. Os adicionais não renovam sozinhos.
+- O pagamento é feito no Stripe (cartão, Pix ou boleto, conforme ativado no painel do Stripe). Quando o pagamento é confirmado, a conta é criada e o comprador recebe, na página de retorno, o link para criar a senha. Enquanto o envio de e-mail não estiver pronto, o administrador pode gerar esse link em Vendas → "Link de acesso".
+- Reembolso total feito no Stripe encerra automaticamente o acesso daquele pedido.
+- Configuração: `STRIPE_SECRET_KEY` e `STRIPE_WEBHOOK_SECRET` no `.env`; no Stripe, cadastre o webhook `https://arrivoinitalia.com/api/stripe/webhook` com os eventos listados em `.env.example`.
+
 ## Operação
 
 - Cadastre módulos e aulas; os vídeos aceitam YouTube, Vimeo ou MP4 HTTPS. Publique quando estiverem prontos.

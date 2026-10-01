@@ -9,6 +9,8 @@ Plataforma de trilhas de aprendizado sobre cidadania, mudança e vida na Itália
 - Progresso por aluno e trilha, favoritos, histórico, tarefas e anotações privadas.
 - Planner por trilha, com etapas, prazos, custos e anexos (PDF ou imagem).
 - Fornitore: catálogo de prestadores de serviço e pedidos de agendamento.
+- Página de vendas pública e pagamento pelo Stripe (cartão, Pix ou boleto), com conta criada automaticamente, renovação com desconto e adicionais comprados dentro da plataforma.
+- Acesso por validade: curso (normalmente 1 ano) e adicionais Meu Planner e Fornitore, que vencem junto com o curso.
 - Convites de acesso, recuperação de senha por link e gestão de usuários.
 - Dúvidas dos alunos e respostas da administração.
 
@@ -56,7 +58,7 @@ Variáveis em `.env` (modelo em `.env.example`):
 
 ## Limites atuais
 
-As videoaulas são cadastradas por link YouTube, Vimeo ou MP4 HTTPS. Convites e recuperação de senha exigem compartilhamento manual do link. Ainda não há pagamentos nem envio automático de e-mail. O catálogo inicial contém aulas em rascunho, ainda a gravar.
+As videoaulas são cadastradas por link YouTube, Vimeo ou MP4 HTTPS. Convites e recuperação de senha exigem compartilhamento manual do link. Ainda não há envio automático de e-mail: o link para criar a senha aparece na página de retorno da compra e pode ser gerado pela administração. O catálogo inicial contém aulas em rascunho, ainda a gravar.
 
 ## Créditos
 
