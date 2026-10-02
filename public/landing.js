@@ -3,7 +3,7 @@
  // Links antigos da plataforma (/#ativar, /#entrar…) seguem para /app.
  if(/^#(ativar|entrar|inicio|trilha|modulo|aula|admin|perfil|planner|fornitore|agenda|suporte|historico|favoritos)\b/.test(location.hash)){location.replace('/app'+location.hash);return;}
  const money=c=>new Intl.NumberFormat('pt-BR',{style:'currency',currency:'BRL'}).format(c/100);
- const form=document.querySelector('#buy-form'),button=document.querySelector('#buy-button'),message=document.querySelector('#buy-message'),totalEl=document.querySelector('#total');
+ const form=document.querySelector('#buy-form');if(!form)return;const button=document.querySelector('#buy-button'),message=document.querySelector('#buy-message'),totalEl=document.querySelector('#total');
  let offer=null;
  const total=()=>{if(!offer)return;let sum=offer.total.course;for(const p of ['planner','fornitore'])if(form.elements[p].checked)sum+=offer.total[p];totalEl.textContent=money(sum);};
  const say=(html)=>{message.innerHTML=html;};
@@ -12,6 +12,7 @@
   document.querySelectorAll('[data-price]').forEach(el=>{const p=el.dataset.price,v=offer.prices[p];el.textContent=el.classList.contains('addon-price')?'+ '+money(v):p==='course'?money(v):'+ '+money(v);});
   total();
   if(!data.payments){button.disabled=true;say('As vendas abrem em breve. Volte em alguns dias.');}
+  else if(data.paused){button.disabled=true;say('As compras estão temporariamente suspensas enquanto atualizamos a página. Volte em breve.');}
   if(data.signedIn){button.disabled=true;say('Você já está conectado. <a href="/app#perfil">Renove ou inclua adicionais na sua área</a>.');}
  }).catch(()=>say('Não foi possível carregar os preços. Atualize a página.'));
  form.addEventListener('change',total);

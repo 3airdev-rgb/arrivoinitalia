@@ -12,6 +12,14 @@ export const plannerAttachments=sqliteTable('planner_attachments',{id:text('id')
 // Direitos de acesso: curso (1 ano) e extras (planner, fornitore), que vencem junto com o curso.
 export const entitlements=sqliteTable('entitlements',{id:text('id').primaryKey(),userId:text('user_id').notNull().references(()=>users.id,{onDelete:'cascade'}),product:text('product').notNull(),starts:integer('starts').notNull(),expires:integer('expires').notNull(),status:text('status').notNull().default('active'),source:text('source').notNull(),reference:text('reference'),created:integer('created').notNull(),updated:integer('updated').notNull()},t=>[index('entitlements_user').on(t.userId,t.product)]);
 
+// Materiais da aula: o conteúdo fica em disco (FILES_DIR/<id>); aqui só os dados do arquivo.
+export const lessonFiles=sqliteTable('lesson_files',{id:text('id').primaryKey(),lessonId:text('lesson_id').notNull().references(()=>records.id,{onDelete:'cascade'}),name:text('name').notNull(),type:text('type').notNull(),size:integer('size').notNull(),position:integer('position').notNull().default(0),created:integer('created').notNull()},t=>[index('lesson_files_lesson').on(t.lessonId,t.position)]);
+
+// Página de vendas editada no painel: um rascunho, uma publicada e as anteriores arquivadas (para restaurar).
+export const salesPageVersions=sqliteTable('sales_page_versions',{id:text('id').primaryKey(),status:text('status').notNull(),content:text('content').notNull(),authorId:text('author_id'),created:integer('created').notNull(),updated:integer('updated').notNull(),publishedAt:integer('published_at')},t=>[index('sales_page_versions_status').on(t.status,t.updated)]);
+// Imagens enviadas pelo painel para a página de vendas (arquivo em FILES_DIR/site-<id>).
+export const siteAssets=sqliteTable('site_assets',{id:text('id').primaryKey(),type:text('type').notNull(),size:integer('size').notNull(),created:integer('created').notNull()});
+
 // Vendas: um pedido por sessão de pagamento do Stripe. Valores em centavos de real.
 export const orders=sqliteTable('orders',{id:text('id').primaryKey(),userId:text('user_id').references(()=>users.id),email:text('email').notNull(),name:text('name').notNull(),kind:text('kind').notNull(),products:text('products').notNull(),amount:integer('amount').notNull(),discount:integer('discount').notNull().default(0),currency:text('currency').notNull(),status:text('status').notNull(),stripeSession:text('stripe_session').unique(),stripePaymentIntent:text('stripe_payment_intent'),created:integer('created').notNull(),updated:integer('updated').notNull(),paidAt:integer('paid_at')},t=>[index('orders_email').on(t.email),index('orders_created').on(t.created)]);
 export const settings=sqliteTable('settings',{key:text('key').primaryKey(),value:text('value').notNull(),updated:integer('updated').notNull()});

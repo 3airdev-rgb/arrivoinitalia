@@ -26,7 +26,9 @@ O curso libera a plataforma até uma data de validade (normalmente 1 ano). Meu P
 
 ## Vendas
 
-- A página de vendas fica na raiz do site (`/`); a plataforma fica em `/app`. Termos de uso e privacidade estão em `/termos` e `/privacidade` (versões preliminares, a revisar).
+- A página de vendas fica na raiz do site (`/`); a plataforma fica em `/app`. Termos de uso e privacidade estão em `/termos` e `/privacidade`.
+- Em Administração → Página de vendas, edite textos, imagens, perguntas frequentes, seções exibidas, contato e os textos de Termos e Privacidade (inclusive razão social e CNPJ). As alterações ficam em rascunho: use "Salvar e ver prévia" e depois "Publicar". As últimas 10 versões publicadas podem ser restauradas.
+- Status da página: "Publicada" ou "Em manutenção". Em manutenção, visitantes veem a página de manutenção (editável no mesmo painel) e todas as compras ficam suspensas, inclusive renovações e adicionais; alunos continuam estudando e administradores veem a página real com um aviso no topo.
 - Em Administração → Vendas, defina os preços do curso e dos adicionais, o desconto de renovação e por quantos dias após o vencimento ele vale. A renovação abre 60 dias antes do vencimento; o novo ano começa quando o atual termina. Os adicionais não renovam sozinhos.
 - O pagamento é feito no Stripe (cartão, Pix ou boleto, conforme ativado no painel do Stripe). Quando o pagamento é confirmado, a conta é criada e o comprador recebe, na página de retorno, o link para criar a senha. Enquanto o envio de e-mail não estiver pronto, o administrador pode gerar esse link em Vendas → "Link de acesso".
 - Reembolso total feito no Stripe encerra automaticamente o acesso daquele pedido.
@@ -35,6 +37,8 @@ O curso libera a plataforma até uma data de validade (normalmente 1 ano). Meu P
 ## Operação
 
 - Cadastre módulos e aulas; os vídeos aceitam YouTube, Vimeo ou MP4 HTTPS. Publique quando estiverem prontos.
+- O cartão do módulo pode mostrar um símbolo ou uma imagem (ajustada automaticamente no envio).
+- Na aula, anexe materiais (PDF, imagens, Office/LibreOffice, TXT, CSV, ZIP, MP3; até 25 MB cada, 15 por aula), cadastre links para consulta e vincule tarefas do Meu Planner. Tudo aparece abaixo do vídeo; o botão “Acesse sua tarefa aqui” só aparece para quem tem o adicional Meu Planner. Os arquivos ficam em `data/files/` (faça backup da pasta `data/` inteira).
 - Monte trilhas com etapas e módulos ordenados. Arquive registros para retirá-los da área dos alunos.
 - Cadastre eventos com início, término e link; cada aluno vê o horário no próprio fuso.
 - Convide alunos e outros administradores, suspenda acessos e gere links de recuperação de senha.

@@ -53,7 +53,7 @@ h1,.section-title,.final-cta h2{font-family:'DM Serif Display',Georgia,serif;fon
 .facts strong{font-family:'DM Serif Display',Georgia,serif;font-weight:400;font-size:28px;color:var(--green-dark)}
 .facts span{font-size:14px;color:var(--muted)}
 .hero-art{position:relative;margin:0;aspect-ratio:4/3.4;border-radius:28px;overflow:hidden;box-shadow:0 30px 60px #2a3b3226}
-.hero-art .photo{position:absolute;inset:0;background:url("https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Landscape_in_Val_d%27Orcia.jpg/1280px-Landscape_in_Val_d%27Orcia.jpg") center/cover #c9b892}
+.hero-art .photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;background:#c9b892}
 .hero-art::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#1d2a2400 30%,#1d2a2470)}
 .route{position:absolute;inset:6% 4% auto;width:92%;z-index:1;filter:drop-shadow(0 3px 6px #0004)}
 .pin{position:absolute;z-index:2;padding:6px 12px;border-radius:999px;background:#fffdf8;font-size:13px;font-weight:700;color:var(--green-dark);box-shadow:0 6px 14px #0002}
@@ -171,3 +171,11 @@ input[type=checkbox]{width:18px;height:18px;accent-color:var(--green)}
  .logo img{height:36px}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+
+/* Página gerada pelo painel: faixa do administrador, imagens das trilhas, contato e manutenção */
+.admin-banner{position:sticky;top:0;z-index:30;padding:10px 16px;background:#fff3dc;border-bottom:1px solid #f0d9a8;color:#6d5317;font-size:14px;text-align:center}.admin-banner a{margin-left:8px;font-weight:600;color:#6d5317}
+.admin-banner+.skip+.site-header,.admin-banner+.site-header{top:41px}
+.track.has-image{padding-top:0;overflow:hidden}.track-image{width:calc(100% + 56px);max-width:none;margin:0 -28px 18px;height:180px;object-fit:cover}
+.footer-contact{display:flex;flex-wrap:wrap;gap:14px}.footer-contact a{color:#dbe6df}
+.maintenance-card{margin-top:64px}.maintenance-card p{margin:10px 0}.maintenance-return{font-weight:600;color:var(--green-dark)!important}.maintenance-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:22px}
+.header-actions{margin-left:auto}.site-nav+.header-actions{margin-left:0}
