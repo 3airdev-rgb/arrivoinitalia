@@ -37,7 +37,8 @@ test('track catalog: new installs, re-import keeps panel edits, clear removes ev
  const sum=cidadania.modules.reduce((a,m)=>a+m.lessons.reduce((s,l)=>s+l[2],0),0);assert(sum>1000,'durações importadas');
 
  // Painel publica a aula com vídeo; aluno tem progresso. Reimportar com título corrigido preserva tudo isso.
- const body={...first,videoUrl:'https://youtu.be/dQw4w9WgXcQ',video:{type:'iframe',url:'https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ'}};
+ assert.equal(first.durationSeconds,360,'estimativa do arquivo em segundos');
+ const body={...first,videoUrl:'https://youtu.be/dQw4w9WgXcQ',video:{type:'iframe',url:'https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ'},durationSeconds:754,duration:13,durationSource:'panel'};
  await db.prepare("UPDATE records SET body=?,status='published' WHERE id='cid-01-01'").bind(JSON.stringify(body)).run();
  await db.prepare("INSERT INTO learner(user_id,key,value,updated) VALUES('owner','complete:cid-01-01','true',1)").run();
  const edited=structuredClone(cidadania);edited.modules[0].lessons[0][0]='1.1 — Como funciona a trilha';edited.modules[12].lessons.pop();
@@ -47,6 +48,8 @@ test('track catalog: new installs, re-import keeps panel edits, clear removes ev
  const r=await importTrack(db,edited,filesDir);assert.equal(r.lessons,87);assert.equal(r.archived,1,'só a aula que saiu do arquivo da Cidadania');
  const moved=(await rows(db,"SELECT * FROM records WHERE id='emp-01-01'"))[0];assert.equal(moved.status,'published');assert.equal(JSON.parse(moved.body).videoUrl,'https://youtu.be/K2pCuLFMFpY');
  const after=(await rows(db,"SELECT * FROM records WHERE id='cid-01-01'"))[0];
+ assert.equal(JSON.parse(after.body).durationSeconds,754,'duração real do painel não é trocada pela estimativa');
+ assert.equal(JSON.parse((await rows(db,"SELECT body FROM records WHERE id='cid-01-02'"))[0].body).durationSeconds,600);
  assert.equal(after.status,'published');assert.equal(JSON.parse(after.body).title,'1.1 — Como funciona a trilha');assert.equal(JSON.parse(after.body).videoUrl,'https://youtu.be/dQw4w9WgXcQ');
  assert.equal((await rows(db,"SELECT * FROM learner WHERE key='complete:cid-01-01'")).length,1);
  // A aula retirada do arquivo fica arquivada (recuperável), não apagada; voltando ao arquivo, retorna como rascunho

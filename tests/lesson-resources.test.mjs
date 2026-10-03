@@ -28,7 +28,12 @@ test('lesson files, links and planner tasks, and planner templates accept their 
  const created=await call('/admin/records',{method:'POST',cookie:admin,body:{...lessonBody,links:[{title:'Consulado',url:'https://www.conssanpaolo.esteri.it/'},{title:'Comune (http)',url:'http://www.comune.example.it/anagrafe'},{title:'',url:''}],plannerTasks:[{trackId:track,itemId:mod},{trackId:track,itemId:mod}]}});
  assert.equal(created.status,200,JSON.stringify(created.body));const lesson=created.body.id;
  const saved=(await call('/admin/records',{cookie:admin})).body.records.find(r=>r.id===lesson);
- assert.equal(saved.links.length,2);assert.deepEqual(saved.plannerTasks,[{trackId:track,itemId:mod}]);
+ assert.equal(saved.links.length,2);
+ // Duração informada como HH:MM:SS, guardada em segundos (minutos arredondados para cima por compatibilidade)
+ assert.equal((await call('/admin/records',{method:'POST',cookie:admin,body:{...lessonBody,durationTime:'1:75:00'}})).status,400);
+ assert.equal((await call('/admin/records',{method:'POST',cookie:admin,body:{...lessonBody,durationTime:'13:00:00'}})).status,400);
+ const timed=await call('/admin/records',{method:'POST',cookie:admin,body:{...lessonBody,title:'Com duração',durationTime:'01:02:03'}});assert.equal(timed.status,200);
+ const tl=(await call('/admin/records',{cookie:admin})).body.records.find(r=>r.id===timed.body.id);assert.equal(tl.durationSeconds,3723);assert.equal(tl.duration,63);assert.equal(tl.durationSource,'panel');assert.deepEqual(saved.plannerTasks,[{trackId:track,itemId:mod}]);
 
  // Arquivos: envio, validação de tipo e conteúdo, limites de acesso
  const pdf=Buffer.from('%PDF-1.4\n%fake\n'),docx=Buffer.concat([Buffer.from([0x50,0x4b,0x03,0x04]),Buffer.alloc(40)]);

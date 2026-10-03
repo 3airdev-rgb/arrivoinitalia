@@ -74,7 +74,8 @@ export async function importTrack(db,catalog,filesDir,options={}){
   // A categoria escolhida no painel prevalece; o arquivo só define a de módulos novos ou sem categoria válida.
   const old=existing.get(m.id),cat=old&&validCategories.has(old.body.categoryId)&&!options.syncCategories?null:await categoryFor(db,m.category);
   statements.push(upsert(m.id,'module',{title:m.title,description:m.description||'',order:mi,...(cat?{categoryId:cat.id,category:cat.title}:{})},{symbol:m.symbol||'◇',cardStyle:'symbol',cardImage:''},'published'));
-  m.lessons.forEach(([title,description,duration],li)=>statements.push(upsert(`${m.id}-${String(li+1).padStart(2,'0')}`,'lesson',{title,description:description||'',order:li,moduleId:m.id,duration:Number(duration)||0},{videoUrl:'',video:null,tasks:[],links:[],plannerTasks:[]},'draft')));
+  // A duração do arquivo é a estimativa de produção; a duração real informada no painel prevalece.
+  m.lessons.forEach(([title,description,duration],li)=>{const id=`${m.id}-${String(li+1).padStart(2,'0')}`,real=existing.get(id)?.body.durationSource==='panel';statements.push(upsert(id,'lesson',{title,description:description||'',order:li,moduleId:m.id,...(real?{}:{duration:Number(duration)||0,durationSeconds:(Number(duration)||0)*60})},{videoUrl:'',video:null,tasks:[],links:[],plannerTasks:[]},'draft'));});
  }
  const body={...(current?.body||{}),id:track.id,title:track.title,name:track.title,tag:track.tag||'SUA JORNADA',description:track.description||'',order:current?.body.order??track.order??0,groups:track.groups};
  statements.push(current?q(db,"UPDATE records SET body=?,status='published',revision=revision+1,updated=? WHERE id=?",JSON.stringify(body),t,track.id):q(db,'INSERT INTO records(id,kind,body,status,revision,updated) VALUES(?,?,?,?,1,?)',track.id,'track',JSON.stringify(body),'published',t));
