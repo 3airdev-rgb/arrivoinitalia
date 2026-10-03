@@ -4,6 +4,7 @@ import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import app from './app.js';
 import {database} from './db.js';
+import {migrateCategories} from './catalog.js';
 
 const root=path.join(path.dirname(fileURLToPath(import.meta.url)),'..');
 const publicDir=path.join(root,'public');
@@ -22,6 +23,8 @@ const asset=p=>(cached||loadAssets())[p];
 
 const dbPath=process.env.ARRIVO_DB_PATH||path.join(root,'data','arrivo.sqlite');
 const DB=database(dbPath);
+// Módulos de versões anteriores (categoria em texto) passam a usar o cadastro de categorias.
+const migrated=await migrateCategories(DB);if(migrated)console.log(`${migrated} módulos associados ao cadastro de categorias.`);
 // Materiais das aulas ficam ao lado do banco (mesmo volume e mesmo backup).
 const env={DB,asset,FILES_DIR:process.env.ARRIVO_FILES_DIR||path.join(path.dirname(path.resolve(dbPath)),'files'),STRIPE_SECRET_KEY:process.env.STRIPE_SECRET_KEY||'',STRIPE_WEBHOOK_SECRET:process.env.STRIPE_WEBHOOK_SECRET||'',STRIPE_API_BASE:process.env.STRIPE_API_BASE||''};
 

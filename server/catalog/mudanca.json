@@ -1,0 +1,280 @@
+{
+ "track": {
+  "id": "mudanca",
+  "title": "Planejar minha mudança",
+  "tag": "DO PLANO À CHEGADA",
+  "description": "Transforme a intenção de morar na Itália em um plano executável: escolher onde viver, calcular os custos, preparar a família, organizar a viagem e conduzir a instalação inicial — com percursos para quem vai sozinho, com familiares ou com animais.",
+  "groups": [
+   [
+    "Meu plano",
+    [
+     "mud-01",
+     "mud-02",
+     "mud-03"
+    ]
+   ],
+   [
+    "Família e saída do Brasil",
+    [
+     "mud-04",
+     "mud-05"
+    ]
+   ],
+   [
+    "Moradia e pets",
+    [
+     "mud-06",
+     "mud-07"
+    ]
+   ],
+   [
+    "Viagem e saúde",
+    [
+     "mud-08",
+     "mud-09"
+    ]
+   ],
+   [
+    "Chegada e instalação",
+    [
+     "mud-10",
+     "mud-11",
+     "mud-12"
+    ]
+   ],
+   [
+    "Imprevistos e revisão",
+    [
+     "mud-13"
+    ]
+   ]
+  ]
+ },
+ "modules": [
+  {
+   "id": "mud-01",
+   "title": "Meu projeto de mudança",
+   "category": "Ponto de partida",
+   "symbol": "✦",
+   "description": "Defina objetivos, necessidades da família, responsabilidades e condições mínimas para executar a mudança.",
+   "lessons": [
+    ["1.1 — Como usar esta trilha", "Percurso principal, aulas específicas para famílias e pets, materiais e tarefas.", 6],
+    ["1.2 — Por que quero morar na Itália?", "Objetivos profissionais, familiares e pessoais; expectativas e prioridades.", 10],
+    ["1.3 — Quem vai comigo e do que cada pessoa precisa?", "Composição familiar, idade, saúde, estudos, trabalho e animais.", 12],
+    ["1.4 — Minha situação documental permite executar este plano?", "Revisar a situação de cada integrante e identificar pendências que exigem orientação antes da viagem.", 12],
+    ["1.5 — Todos juntos ou mudança em etapas?", "Comparar despesas, separação temporária, moradia e responsabilidades.", 12],
+    ["1.6 — Construindo o cronograma da mudança", "Organizar tarefas por dependência, responsável e prazo, trabalhando a partir de uma data provisória.", 15],
+    ["1.7 — O que precisa estar resolvido antes de comprar a passagem?", "Definir condições mínimas e pontos que impedem o avanço do plano.", 10]
+   ]
+  },
+  {
+   "id": "mud-02",
+   "title": "Escolhendo minha cidade na Itália",
+   "category": "Plano da mudança",
+   "symbol": "⚑",
+   "description": "Compare cidades considerando trabalho, moradia, transporte, serviços, escola e características da família.",
+   "lessons": [
+    ["2.1 — Região, província e Comune: entendendo o mapa", "Organização territorial e sua utilidade na pesquisa de moradia e serviços.", 10],
+    ["2.2 — Definindo meus critérios de escolha", "Emprego, orçamento, escola, saúde, clima, transporte e rede de apoio.", 12],
+    ["2.3 — Pesquisando oportunidades na minha área", "Usar anúncios de emprego para entender localização, exigências e deslocamentos.", 15],
+    ["2.4 — Comparando custo de vida entre cidades", "Levantar moradia, transporte, alimentação e serviços usando uma mesma base de comparação.", 15],
+    ["2.5 — Cidade grande, cidade pequena ou entorno urbano?", "Acesso a serviços, dependência de carro, oferta de imóveis e rotina.", 12],
+    ["2.6 — Escolhendo com crianças, idosos ou necessidades específicas", "Proximidade de escolas, atendimento, acessibilidade e suporte familiar.", 12],
+    ["2.7 — Como pesquisar a cidade a distância", "Mapas, trajetos, serviços, fontes locais e perguntas para moradores.", 12],
+    ["2.8 — Minha decisão e minha cidade alternativa", "Comparar as finalistas e preparar uma segunda opção.", 12]
+   ]
+  },
+  {
+   "id": "mud-03",
+   "title": "Orçamento e reserva para a mudança",
+   "category": "Plano da mudança",
+   "symbol": "★",
+   "description": "Calcule despesas de preparação, instalação e manutenção e simule períodos sem renda e imprevistos.",
+   "lessons": [
+    ["3.1 — Quanto custa mudar e quanto custa permanecer?", "Separar despesas únicas, mensais e eventuais.", 10],
+    ["3.2 — Custos antes de sair do Brasil", "Documentação, serviços profissionais, passagens, bagagem e preparação dos pets.", 12],
+    ["3.3 — Custos para entrar no imóvel", "Aluguel inicial, caução, intermediação, serviços e instalação da casa.", 15],
+    ["3.4 — Montando o orçamento mensal da família", "Moradia, contas, mercado, transporte, saúde, escola e animais.", 15],
+    ["3.5 — Quanto tempo podemos ficar sem renda?", "Simular atraso na contratação, renda parcial e despesas acima do previsto.", 15],
+    ["3.6 — Renda em reais e despesas em euros", "Efeito do câmbio no orçamento e organização das datas de recebimento e pagamento.", 12],
+    ["3.7 — Planejando remessas e acesso ao dinheiro", "Comparar custos, documentação e meios de pagamento; preparar alternativas de acesso à reserva.", 12],
+    ["3.8 — Minha reserva e os limites do plano", "Definir pontos de revisão, redução de despesas ou adiamento da mudança.", 12]
+   ]
+  },
+  {
+   "id": "mud-04",
+   "title": "Documentação da viagem e da família",
+   "category": "Família e saída do Brasil",
+   "symbol": "✉",
+   "description": "Organize uma pasta por viajante, considerando nacionalidade, vínculo familiar, finalidade da viagem e necessidades documentais.",
+   "lessons": [
+    ["4.1 — Uma pasta para cada pessoa", "Identificação, documentos familiares, registros profissionais, escolares e de saúde.", 10],
+    ["4.2 — Cidadão italiano, cidadão europeu e familiar não europeu", "Separar os cenários e identificar quais procedimentos precisam ser confirmados.", 15],
+    ["4.3 — Visto, entrada e permanência: etapas diferentes", "Entender a finalidade de cada etapa e onde buscar as exigências do próprio caso.", 12],
+    ["4.4 — Preparando a mudança do cônjuge", "Situação do casamento, registros, documentos e perguntas para o atendimento responsável.", 12],
+    ["4.5 — Filhos menores e viagem com responsáveis", "Documentação, autorizações aplicáveis e organização quando a família viaja separadamente.", 12],
+    ["4.6 — Filhos maiores, enteados e outros dependentes", "Identificar situações que exigem análise própria antes da viagem.", 12],
+    ["4.7 — Documentos escolares e profissionais", "O que pesquisar e solicitar no Brasil para evitar dificuldades posteriores.", 15],
+    ["4.8 — Revisão final das pastas", "Validade, formatos exigidos, traduções, originais, cópias e acesso digital seguro.", 12]
+   ]
+  },
+  {
+   "id": "mud-05",
+   "title": "Organizando minha saída do Brasil",
+   "category": "Família e saída do Brasil",
+   "symbol": "✎",
+   "description": "Prepare contratos, patrimônio, acessos, representação e compromissos que precisarão ser encerrados ou mantidos no Brasil.",
+   "lessons": [
+    ["5.1 — O que encerrar, manter ou transferir?", "Contratos, assinaturas, contas, serviços e compromissos recorrentes.", 12],
+    ["5.2 — Casa, carro, móveis e objetos pessoais", "Comparar venda, locação, armazenamento e transporte considerando custos e responsáveis.", 12],
+    ["5.3 — Bancos, telefone e acesso às contas", "Atualização cadastral, autenticação, recuperação de acesso e contatos de atendimento.", 12],
+    ["5.4 — Procurações e apoio no Brasil", "Identificar tarefas que poderão exigir representação e delimitar os poderes necessários.", 10],
+    ["5.5 — Saída fiscal e rendimentos mantidos no Brasil", "Organizar informações e perguntas para avaliação tributária individual.", 15],
+    ["5.6 — Emprego ou empresa que continuará no Brasil", "Verificar condições contratuais e encaminhar questões trabalhistas e fiscais antes da mudança.", 12],
+    ["5.7 — Preparando a transição da família", "Despedidas, expectativas, participação dos filhos e manutenção dos vínculos.", 10]
+   ]
+  },
+  {
+   "id": "mud-06",
+   "title": "Aluguel e escolha da moradia",
+   "category": "Moradia e pets",
+   "symbol": "⌂",
+   "description": "Aprenda a procurar imóveis, apresentar sua candidatura, comparar propostas e conferir condições antes de contratar.",
+   "lessons": [
+    ["6.1 — Qual imóvel atende à minha família?", "Número de moradores, localização, acessibilidade, pets e orçamento.", 12],
+    ["6.2 — Entendendo os anúncios italianos", "Tipos de imóvel, ambientes, mobília, condomínio e informações incompletas.", 12],
+    ["6.3 — Onde procurar imóveis", "Portais, imobiliárias, proprietários e redes locais; organização da busca.", 12],
+    ["6.4 — Intermediação ou assessoria de busca?", "Diferenças de serviço, área atendida, disponibilidade e condições de contratação.", 12],
+    ["6.5 — Preparando minha candidatura", "Apresentação da família, comprovação financeira e documentos solicitados.", 15],
+    ["6.6 — Alugando sem emprego italiano", "Dificuldades possíveis, alternativas a avaliar e perguntas sobre garantias.", 12],
+    ["6.7 — Entendendo o custo total da proposta", "Aluguel, caução, comissão, despesas adicionais e valores incluídos.", 15],
+    ["6.8 — Contrato e necessidade de registrar residência", "Pontos a confirmar no imóvel, no contrato e junto ao órgão competente.", 15],
+    ["6.9 — Alugando com animais", "Informar quantidade e porte, avaliar o espaço e confirmar as condições de ocupação.", 12],
+    ["6.10 — Visita presencial ou a distância", "Estado do imóvel, umidade, aquecimento, equipamentos, localização e documentação da visita.", 15],
+    ["6.11 — Conferindo antes de assinar ou pagar", "Identidade das partes, proposta, contrato, comprovantes e sinais que exigem esclarecimento.", 15],
+    ["6.12 — Entrega das chaves e plano alternativo", "Inventário, registro das condições, datas e hospedagem se houver atraso.", 12]
+   ]
+  },
+  {
+   "id": "mud-07",
+   "title": "Mudança com pets",
+   "category": "Moradia e pets",
+   "symbol": "♥",
+   "description": "Planeje a preparação sanitária, a documentação, o transporte e a chegada dos animais, integrando essas etapas à mudança familiar.",
+   "lessons": [
+    ["7.1 — Planejando a mudança com animais", "Espécie, quantidade, porte, saúde, orçamento e acompanhamento veterinário.", 12],
+    ["7.2 — Construindo o cronograma sanitário", "Organizar a sequência de procedimentos conforme origem, destino e regras vigentes.", 15],
+    ["7.3 — Microchip e vacinação", "Conferência dos registros e identificação dos pontos a validar com o veterinário.", 12],
+    ["7.4 — Sorologia e documentação dos resultados", "Planejar quando aplicável e conferir os requisitos oficiais antes de contratar exames.", 12],
+    ["7.5 — CVI/e-CVI: quem faz o quê?", "Responsabilidades, preparação dos dados, revisão e acompanhamento da emissão.", 15],
+    ["7.6 — O pet viajará comigo ou em outro momento?", "Viagem com tutor, terceiro ou transporte especializado; enquadramento a verificar.", 12],
+    ["7.7 — Cabine, porão e carga", "Diferenças operacionais e condições a confirmar com a companhia e profissionais envolvidos.", 15],
+    ["7.8 — Escolhendo a rota e confirmando a reserva", "Conexões, troca de aeroportos, duração, disponibilidade e confirmação por trecho.", 15],
+    ["7.9 — Caixa de transporte e adaptação", "Dimensões exigidas, preparação gradual e necessidades individuais do animal.", 12],
+    ["7.10 — Vários pets ou animais de grande porte", "Coordenação de acompanhantes, reservas, deslocamentos e despesas.", 12],
+    ["7.11 — Imprevistos antes do embarque", "Doença, documento pendente, recusa de transporte e remarcação.", 12],
+    ["7.12 — Desembarque e transporte até a casa", "Preparação para as verificações de entrada e deslocamento com animais e bagagens.", 12],
+    ["7.13 — Primeiros procedimentos e adaptação na Itália", "Registros locais a verificar, atendimento veterinário, segurança da casa e adaptação inicial.", 15]
+   ]
+  },
+  {
+   "id": "mud-08",
+   "title": "Passagens, bagagens e preparação da viagem",
+   "category": "Viagem e saúde",
+   "symbol": "✈",
+   "description": "Organize itinerário, documentação de embarque, conexões, bagagem, hospedagem inicial e transporte de chegada.",
+   "lessons": [
+    ["8.1 — Escolhendo a data da mudança", "Compatibilizar documentos, imóvel, escola, trabalho e pets.", 12],
+    ["8.2 — Comparando passagens pelo custo total", "Bagagens, conexões, alterações, aeroportos e serviços necessários.", 15],
+    ["8.3 — Documentação de embarque de cada viajante", "Conferir exigências conforme nacionalidade, rota e finalidade da viagem.", 12],
+    ["8.4 — Organizando a bagagem da mudança", "Itens essenciais, documentos, restrições e comparação com envio separado.", 12],
+    ["8.5 — Conexões e mudança de aeroporto", "Tempo disponível, recolhimento de malas, deslocamento e necessidades da família.", 12],
+    ["8.6 — Hospedagem inicial e transporte de chegada", "Confirmar endereço, horários, capacidade para pessoas, malas e animais.", 12],
+    ["8.7 — Preparação para o controle de fronteira", "Manter informações coerentes com a finalidade real da viagem e documentos acessíveis.", 12],
+    ["8.8 — Atraso, cancelamento e bagagem extraviada", "Registrar ocorrências, guardar comprovantes e acionar os canais responsáveis.", 12]
+   ]
+  },
+  {
+   "id": "mud-09",
+   "title": "Saúde e cuidados durante a mudança",
+   "category": "Viagem e saúde",
+   "symbol": "⚕",
+   "description": "Prepare a continuidade de tratamentos, os registros de saúde e as necessidades individuais durante a transição.",
+   "lessons": [
+    ["9.1 — Mapeando as necessidades de saúde da família", "Tratamentos, consultas, medicamentos e apoios que precisam de continuidade.", 12],
+    ["9.2 — Preparando meu histórico de saúde", "Relatórios, receitas, exames, vacinação e informações importantes para novo atendimento.", 12],
+    ["9.3 — Medicamentos e equipamentos na viagem", "Verificar transporte, conservação e documentação com profissionais e autoridades responsáveis.", 15],
+    ["9.4 — Planejando a cobertura durante a transição", "Comparar finalidade, duração, exclusões e condições de seguros ou outras coberturas.", 15],
+    ["9.5 — Mudança com gestantes, idosos ou pessoas com deficiência", "Acessibilidade, deslocamento, acompanhamento e planejamento individual.", 12],
+    ["9.6 — Necessidades específicas das crianças", "Continuidade terapêutica, relatórios e preparação para o contato com serviços e escolas.", 12]
+   ]
+  },
+  {
+   "id": "mud-10",
+   "title": "Primeiros procedimentos na Itália",
+   "category": "Chegada e instalação",
+   "symbol": "☀",
+   "description": "Identifique os órgãos responsáveis, monte sua sequência de providências e organize atendimentos e protocolos.",
+   "lessons": [
+    ["10.1 — Quem faz o quê na Itália?", "Funções de Comune, Questura, Agenzia delle Entrate, ASL, Poste, CAF e Patronato.", 15],
+    ["10.2 — Montando minha sequência de chegada", "Organizar tarefas conforme situação documental, família e local de residência.", 15],
+    ["10.3 — Declaração de presença e hospitalidade", "Diferenciar finalidades, responsáveis e circunstâncias em que devem ser verificadas.", 12],
+    ["10.4 — Codice fiscale: preparação e conferência", "Identificar o canal aplicável, organizar documentos e conferir os dados recebidos.", 12],
+    ["10.5 — Como preparar um atendimento", "Agendamento, perguntas, documentos, vocabulário e registro das orientações.", 12],
+    ["10.6 — Quando um órgão pede um documento que depende de outro", "Documentar o impasse, solicitar esclarecimentos e buscar apoio adequado.", 12],
+    ["10.7 — Meu controle de protocolos", "Guardar recibos, acompanhar respostas e registrar próximas ações.", 10]
+   ]
+  },
+  {
+   "id": "mud-11",
+   "title": "Residência e permanência da família",
+   "category": "Chegada e instalação",
+   "symbol": "❖",
+   "description": "Prepare e acompanhe os procedimentos iniciais de residência e documentação de permanência aplicáveis aos familiares.",
+   "lessons": [
+    ["11.1 — Entendendo residência, endereço e permanência", "Diferenciar conceitos que aparecem nos procedimentos e nos atendimentos.", 12],
+    ["11.2 — Preparando o pedido de residência", "Conferir documentos pessoais, situação do imóvel e instruções locais.", 15],
+    ["11.3 — Acompanhamento e verificação da residência", "Comunicação, conferência de dados e organização para eventuais verificações.", 12],
+    ["11.4 — Qual procedimento se aplica ao familiar não europeu?", "Identificar a situação da família e confirmar o enquadramento antes de preencher pedidos.", 15],
+    ["11.5 — Preparando o pedido de permanência", "Documentos, formulários, pagamentos e canal de apresentação conforme o caso.", 15],
+    ["11.6 — Recibos, agendamentos e espera", "Organizar comprovantes e identificar quais possibilidades precisam ser confirmadas durante a análise.", 12],
+    ["11.7 — Filhos menores, maiores e dependentes", "Particularidades documentais e situações que exigem avaliação individual.", 12],
+    ["11.8 — Exigências, demora e dados incorretos", "Preparar respostas, acompanhar o órgão responsável e identificar quando procurar assistência.", 12],
+    ["11.9 — CIE e demais documentos da instalação", "Planejar solicitações após conferir as condições aplicáveis e aproveitar aulas da primeira trilha.", 12]
+   ]
+  },
+  {
+   "id": "mud-12",
+   "title": "Instalação da casa e serviços essenciais",
+   "category": "Chegada e instalação",
+   "symbol": "✿",
+   "description": "Organize a entrega do imóvel, contas, telefonia, internet, pagamentos e os primeiros encaminhamentos da rotina familiar.",
+   "lessons": [
+    ["12.1 — Conferindo a casa na chegada", "Inventário, fotografias, medidores, equipamentos e comunicação de problemas.", 12],
+    ["12.2 — Água, energia, gás e demais serviços", "Identificar contratos, titularidade, cobranças e responsabilidades.", 15],
+    ["12.3 — Telefone e internet", "Cobertura no endereço, instalação, fidelização, custos e requisitos de contratação.", 12],
+    ["12.4 — Conta bancária e pagamentos", "Documentação solicitada, serviços necessários e comparação de despesas.", 12],
+    ["12.5 — Mobiliando sem comprometer a reserva", "Prioridades, itens usados, entrega, montagem e gastos que podem esperar.", 12],
+    ["12.6 — Transporte na primeira fase", "Trajetos, passes, horários e alternativas enquanto a família se organiza.", 12],
+    ["12.7 — Preparando a entrada dos filhos na escola", "Localizar o atendimento, apresentar a documentação e encaminhar as próximas etapas.", 12],
+    ["12.8 — Meu italiano para os primeiros atendimentos", "Frases e simulações para imóvel, serviços, agendamentos e pedidos de esclarecimento.", 15]
+   ]
+  },
+  {
+   "id": "mud-13",
+   "title": "Imprevistos e revisão da mudança",
+   "category": "Imprevistos e revisão",
+   "symbol": "☂",
+   "description": "Prepare alternativas para atrasos, dificuldades financeiras, mudança de cidade e necessidades de adaptação da família.",
+   "lessons": [
+    ["13.1 — O imóvel atrasou ou deixou de estar disponível", "Acionar hospedagem alternativa, rever deslocamentos e recalcular despesas.", 12],
+    ["13.2 — Os documentos estão demorando mais que o previsto", "Atualizar o cronograma sem presumir que outras etapas já estão liberadas.", 12],
+    ["13.3 — A renda não chegou no prazo esperado", "Revisar orçamento, prioridades e limites da reserva.", 12],
+    ["13.4 — A cidade escolhida não está funcionando", "Reavaliar trabalho, moradia, serviços e o custo de uma segunda mudança.", 12],
+    ["13.5 — A família está com dificuldades de adaptação", "Identificar necessidades, reorganizar responsabilidades e buscar apoio.", 12],
+    ["13.6 — Adiar, retornar ou continuar?", "Avaliar alternativas sem transformar a mudança em uma obrigação de permanecer.", 12],
+    ["13.7 — Revisão final e próximos passos", "Conferir instalação, pendências e encaminhamento para “Construir minha vida na Itália”.", 10]
+   ]
+  }
+ ]
+}

@@ -25,7 +25,9 @@ test('complete account, authorization, catalog, progress and administration life
  const login=await post('/auth/login',{email:'student@example.test',password:'StudentPassword2026!'});assert.equal(login.status,200);const student=login.cookie;
  assert.equal((await call('/admin/records',{cookie:student})).status,403);
  assert.equal((await post('/admin/records',{kind:'module',title:'Injection',status:'published'},student)).status,403);
- const module=await post('/admin/records',{kind:'module',title:'Test module',category:'Tests',status:'published',order:0},admin);assert.equal(module.status,200);
+ assert.equal((await post('/admin/records',{kind:'module',title:'Sem categoria',status:'published'},admin)).status,400);
+ const category=await post('/admin/records',{kind:'category',title:'Testes',status:'published'},admin);assert.equal(category.status,200);
+ const module=await post('/admin/records',{kind:'module',title:'Test module',categoryId:category.body.id,status:'published',order:0},admin);assert.equal(module.status,200);
  const lessonBody={kind:'lesson',title:'Test lesson',moduleId:module.body.id,description:'Plain text',status:'published',videoUrl:'https://youtu.be/dQw4w9WgXcQ',tasks:[{id:'task-1',title:'Learn'}],order:0};
  assert.equal((await post('/admin/records',{...lessonBody,videoUrl:'javascript:alert(1)'},admin)).status,400);
  assert.equal((await post('/admin/records',{...lessonBody,videoUrl:''},admin)).status,400);

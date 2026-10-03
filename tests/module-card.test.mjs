@@ -10,7 +10,8 @@ test('module card shows a symbol or an image served separately from the catalog'
  await createAdmin(DB,{email:'owner@example.test',name:'Owner',password:'CorrectHorse2026!'});
  const admin=(await json('/auth/login',{method:'POST',body:{email:'owner@example.test',password:'CorrectHorse2026!'}})).cookie;
  const image='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+jD1sAAAAASUVORK5CYII=';
- const base={kind:'module',title:'Cartão com foto',category:'TESTE',status:'published',order:0};
+ const categoryId=(await json('/admin/records',{method:'POST',body:{kind:'category',title:'Teste',status:'published'},cookie:admin})).body.id;
+ const base={kind:'module',title:'Cartão com foto',categoryId,status:'published',order:0};
 
  assert.equal((await json('/admin/records',{method:'POST',body:{...base,cardStyle:'image'},cookie:admin})).status,400);
  assert.equal((await json('/admin/records',{method:'POST',body:{...base,cardStyle:'image',cardImage:'data:image/svg+xml;base64,PHN2Zz4='},cookie:admin})).status,400);

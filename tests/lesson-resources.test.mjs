@@ -17,7 +17,8 @@ test('lesson files, links and planner tasks, and planner templates accept their 
  await createAdmin(DB,{email:'owner@example.test',name:'Owner',password:'CorrectHorse2026!'});
  const admin=(await call('/auth/login',{method:'POST',body:{email:'owner@example.test',password:'CorrectHorse2026!'}})).cookie;
 
- const mod=(await call('/admin/records',{method:'POST',cookie:admin,body:{kind:'module',title:'Documentos',category:'DOC',status:'published'}})).body.id;
+ const categoryId=(await call('/admin/records',{method:'POST',cookie:admin,body:{kind:'category',title:'Documentos',status:'published'}})).body.id;
+ const mod=(await call('/admin/records',{method:'POST',cookie:admin,body:{kind:'module',title:'Documentos',categoryId,status:'published'}})).body.id;
  const track=(await call('/admin/records',{method:'POST',cookie:admin,body:{kind:'track',title:'Trilha teste',status:'published',groups:[['Etapa 1',[mod]]]}})).body.id;
  const lessonBody={kind:'lesson',title:'Certidões',moduleId:mod,status:'published',videoUrl:'https://youtu.be/dQw4w9WgXcQ',order:0};
 

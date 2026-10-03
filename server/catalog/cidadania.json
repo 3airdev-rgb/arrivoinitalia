@@ -1,0 +1,255 @@
+{
+ "track": {
+  "id": "cidadania",
+  "title": "Reconhecer minha cidadania",
+  "tag": "DA ORIGEM AO RECONHECIMENTO",
+  "description": "Do entendimento do seu caso à organização dos documentos e dos procedimentos posteriores ao reconhecimento. Todos fazem a base comum e depois seguem os módulos do próprio caso.",
+  "groups": [
+   [
+    "Base comum",
+    [
+     "cid-01",
+     "cid-02"
+    ]
+   ],
+   [
+    "Documentação",
+    [
+     "cid-03",
+     "cid-04",
+     "cid-05",
+     "cid-06"
+    ]
+   ],
+   [
+    "Vias de reconhecimento",
+    [
+     "cid-07",
+     "cid-08",
+     "cid-09"
+    ]
+   ],
+   [
+    "Família e casamento",
+    [
+     "cid-10",
+     "cid-11"
+    ]
+   ],
+   [
+    "Depois do reconhecimento",
+    [
+     "cid-12",
+     "cid-13"
+    ]
+   ]
+  ]
+ },
+ "modules": [
+  {
+   "id": "cid-01",
+   "title": "Meu ponto de partida na cidadania",
+   "category": "Ponto de partida",
+   "symbol": "✦",
+   "description": "Identifique sua situação, organize as informações da família e descubra como percorrer a trilha e consultar fontes confiáveis.",
+   "lessons": [
+    ["1.1 — Como funciona esta trilha", "Percurso comum, módulos por modalidade, materiais de apoio e acompanhamento do progresso.", 6],
+    ["1.2 — Qual é a minha situação hoje?", "Descendente pesquisando, documentação em preparação, processo iniciado ou cidadania já reconhecida.", 10],
+    ["1.3 — Minha família também faz parte do planejamento", "Identificar cônjuge, filhos e outros familiares envolvidos, separando o objetivo de cada pessoa.", 10],
+    ["1.4 — Organizando minha ficha de caso", "Registrar datas, locais, documentos disponíveis, protocolos e perguntas pendentes.", 12],
+    ["1.5 — Como acompanhar informações com segurança", "Diferenciar fonte oficial, opinião, experiência individual e publicidade; conferir a data da informação.", 12]
+   ]
+  },
+  {
+   "id": "cid-02",
+   "title": "Caminhos e análise inicial da cidadania",
+   "category": "Caminhos da cidadania",
+   "symbol": "⚑",
+   "description": "Conheça as modalidades, os acontecimentos familiares relevantes e os pontos que precisam de avaliação antes de escolher um caminho.",
+   "lessons": [
+    ["2.1 — Descendência, casamento e outras modalidades", "Visão geral das formas de reconhecimento ou aquisição e das diferenças entre elas.", 12],
+    ["2.2 — Descendência: quais informações precisam ser avaliadas?", "Linha familiar, nacionalidades, acontecimentos e datas relevantes para a análise.", 15],
+    ["2.3 — Naturalização do antepassado", "Por que pesquisar esse fato, quais registros procurar e como organizar as informações encontradas.", 12],
+    ["2.4 — Linha materna e situações conhecidas como “casos de 1948”", "Conceitos essenciais e informações necessárias para uma avaliação especializada.", 12],
+    ["2.5 — Mudanças legais e processos já iniciados", "Distinguir fila, agendamento, protocolo e processo em andamento; montar uma cronologia documental.", 15],
+    ["2.6 — Consulado, Justiça ou procedimento na Itália?", "Comparar funcionamento, despesas, necessidade de presença e fatores que influenciam a escolha.", 15],
+    ["2.7 — Quando procurar uma avaliação profissional", "Como apresentar o caso e quais perguntas fazer, sem depender de promessas de aprovação.", 10]
+   ]
+  },
+  {
+   "id": "cid-03",
+   "title": "Pesquisa familiar e localização de registros",
+   "category": "Documentação da cidadania",
+   "symbol": "✿",
+   "description": "Reconstrua a linha familiar, pesquise registros brasileiros e italianos e organize as buscas pelos documentos faltantes.",
+   "lessons": [
+    ["3.1 — Construindo minha árvore para o processo", "Selecionar a linha relevante e registrar nomes, datas e locais.", 12],
+    ["3.2 — Começando pelos documentos da família", "Entrevistas com parentes, certidões antigas, cartas e outros indícios.", 10],
+    ["3.3 — Pesquisando registros no Brasil", "Cartórios, arquivos e bases de pesquisa; como registrar as buscas realizadas.", 15],
+    ["3.4 — Localizando a origem italiana", "Variações de nomes e localidades; pistas para identificar o Comune ou a paróquia.", 15],
+    ["3.5 — Solicitando registros na Itália", "Preparar uma solicitação clara, fornecer dados suficientes e acompanhar a resposta.", 12],
+    ["3.6 — Quando não encontro o documento", "Rever hipóteses, ampliar a pesquisa e avaliar a contratação de um pesquisador.", 12]
+   ]
+  },
+  {
+   "id": "cid-04",
+   "title": "Organização da pasta de cidadania",
+   "category": "Documentação da cidadania",
+   "symbol": "✉",
+   "description": "Prepare um checklist para o seu caso, solicite documentos e organize certidões, registros e arquivos físicos e digitais.",
+   "lessons": [
+    ["4.1 — Criando um checklist para o meu caso", "Transformar as exigências do órgão responsável em uma lista personalizada.", 12],
+    ["4.2 — Certidões brasileiras: tipos e solicitação", "Identificar o formato exigido antes de solicitar e pagar pela emissão.", 12],
+    ["4.3 — Registros italianos: o que conferir", "Identificação do titular, tipo de documento, órgão emissor e dados necessários.", 10],
+    ["4.4 — Pesquisa e comprovação de naturalização", "Organizar os resultados e documentos referentes ao antepassado.", 12],
+    ["4.5 — Casamentos, divórcios e outras alterações", "Mapear acontecimentos que podem exigir documentação complementar.", 15],
+    ["4.6 — Aproveitamento de documentos da família", "Verificar possibilidades e limites de documentos ou processos de parentes.", 10],
+    ["4.7 — Minha pasta física e digital", "Nomear arquivos, digitalizar com legibilidade, guardar originais e controlar versões.", 10]
+   ]
+  },
+  {
+   "id": "cid-05",
+   "title": "Conferência e correção de documentos",
+   "category": "Documentação da cidadania",
+   "symbol": "✎",
+   "description": "Compare os registros da família, identifique divergências e prepare o encaminhamento de eventuais correções.",
+   "lessons": [
+    ["5.1 — Conferindo a linha familiar documento por documento", "Comparar os registros e verificar a ligação entre as gerações.", 15],
+    ["5.2 — Divergências de nomes e sobrenomes", "Identificar grafias diferentes, sobrenomes de casamento e adaptações de nomes.", 12],
+    ["5.3 — Divergências de datas, locais e filiação", "Organizar diferenças que podem dificultar a identificação das pessoas.", 12],
+    ["5.4 — Preciso retificar?", "Entender por que a necessidade de correção depende da análise do caso e das exigências aplicáveis.", 12],
+    ["5.5 — Encaminhando uma correção", "Documentação de apoio, canais de atendimento e possíveis encaminhamentos administrativos ou judiciais.", 15],
+    ["5.6 — Conferência depois da correção", "Revisar a nova emissão e atualizar a pasta antes de contratar as próximas etapas.", 10]
+   ]
+  },
+  {
+   "id": "cid-06",
+   "title": "Traduções, apostilas e revisão final",
+   "category": "Documentação da cidadania",
+   "symbol": "❖",
+   "description": "Organize a preparação dos documentos, confirme as exigências aplicáveis e revise a pasta antes da apresentação ou do envio.",
+   "lessons": [
+    ["6.1 — O que a tradução faz e o que a apostila faz", "Finalidade de cada procedimento e diferença entre eles.", 10],
+    ["6.2 — Qual tradução meu procedimento exige?", "Como confirmar a modalidade aceita e avaliar o prestador.", 12],
+    ["6.3 — Organizando o apostilamento", "Conferir quais documentos e traduções precisam do procedimento no caso concreto.", 12],
+    ["6.4 — Em qual ordem preparar os documentos?", "Planejar emissão, conferência, correção, tradução e apostilamento para reduzir retrabalho.", 12],
+    ["6.5 — Revisão final e envio", "Legibilidade, páginas completas, assinaturas, anexos, cópias e rastreamento da entrega.", 15]
+   ]
+  },
+  {
+   "id": "cid-07",
+   "title": "Cidadania pela via consular no Brasil",
+   "category": "Vias de reconhecimento",
+   "symbol": "⌂",
+   "description": "Identifique o consulado competente, prepare agendamento e atendimento e acompanhe exigências e comunicações do procedimento.",
+   "lessons": [
+    ["7.1 — Identificando meu consulado", "Circunscrição, residência e localização das instruções oficiais.", 10],
+    ["7.2 — Entendendo o procedimento publicado pelo consulado", "Serviços, etapas, listas, agendamentos e diferenças entre representações.", 12],
+    ["7.3 — Preparando o acesso ao Prenotami", "Cadastro, acesso, dados pessoais e organização prévia dos arquivos, quando esse sistema for utilizado.", 12],
+    ["7.4 — Agendamento: dificuldades e acompanhamento", "Indisponibilidade, falhas de acesso, comunicações oficiais e registro de tentativas, sem promessa de vaga.", 12],
+    ["7.5 — O que enviar e o que levar", "Separar documentos de agendamento, envio prévio e atendimento presencial.", 15],
+    ["7.6 — Preparando o atendimento", "Formulários, pagamentos, originais e revisão das instruções recebidas.", 12],
+    ["7.7 — Exigências e complementações", "Interpretar o pedido, organizar a resposta e controlar prazos informados pelo consulado.", 12],
+    ["7.8 — Como acompanhar até a conclusão", "Protocolos, comunicações, atualização de dados e encaminhamento para os próximos módulos.", 10]
+   ]
+  },
+  {
+   "id": "cid-08",
+   "title": "Cidadania pela via judicial",
+   "category": "Vias de reconhecimento",
+   "symbol": "⚖",
+   "description": "Entenda a contratação profissional, os custos, as etapas do processo e as providências posteriores à decisão.",
+   "lessons": [
+    ["8.1 — Quando avaliar a via judicial", "Situações que motivam a consulta jurídica e limites de uma explicação geral.", 12],
+    ["8.2 — Escolhendo o advogado e entendendo o contrato", "Escopo, responsabilidades, comunicação, despesas e serviços posteriores à decisão.", 15],
+    ["8.3 — Orçamento completo do processo", "Honorários, documentos, traduções, despesas adicionais e possíveis recursos.", 12],
+    ["8.4 — Documentos e procuração", "Preparação dos materiais conforme a orientação do profissional responsável.", 12],
+    ["8.5 — Entendendo as etapas e o andamento", "Vocabulário básico, protocolo, movimentações e perguntas para acompanhamento.", 15],
+    ["8.6 — Decisão desfavorável, demora ou mudança de cenário", "Como organizar uma conversa com o advogado e avaliar próximos passos e custos.", 12],
+    ["8.7 — Sentença favorável: o que ainda falta?", "Procedimentos posteriores, documentos da decisão e encaminhamento aos registros competentes.", 15],
+    ["8.8 — Posso planejar a mudança agora?", "Conferir a documentação efetivamente disponível e separar expectativas do que já foi concluído.", 10]
+   ]
+  },
+  {
+   "id": "cid-09",
+   "title": "Cidadania pela via administrativa na Itália",
+   "category": "Vias de reconhecimento",
+   "symbol": "✈",
+   "description": "Avalie a viabilidade desse caminho e organize a preparação, a estadia e o acompanhamento junto ao Comune.",
+   "lessons": [
+    ["9.1 — Este caminho se aplica ao meu caso?", "Verificações preliminares e necessidade de confirmar as regras vigentes.", 12],
+    ["9.2 — Planejando o procedimento com o Comune", "Consultar instruções, identificar o setor responsável e organizar a comunicação.", 12],
+    ["9.3 — Residência e presença durante o procedimento", "Entender o papel da residência e as verificações aplicáveis, com ligação à trilha de mudança.", 15],
+    ["9.4 — Contratando assessoria", "Serviços incluídos, contrato, responsabilidades, comprovantes e limites de promessas.", 12],
+    ["9.5 — Orçamento e preparação da estadia", "Custos, reserva, incerteza de duração e plano para imprevistos.", 12],
+    ["9.6 — Apresentação e acompanhamento da documentação", "Protocolo, exigências, comunicação e guarda dos registros.", 15],
+    ["9.7 — Conclusão e próximos procedimentos", "Conferir o reconhecimento e organizar registros e documentos posteriores.", 10]
+   ]
+  },
+  {
+   "id": "cid-10",
+   "title": "Cidadania dos filhos e situações familiares",
+   "category": "Família e casamento",
+   "symbol": "♥",
+   "description": "Organize as informações dos filhos e compreenda quais situações familiares precisam de análise e documentação próprias.",
+   "lessons": [
+    ["10.1 — Meu reconhecimento resolve o caso dos meus filhos?", "Por que cada situação precisa ser conferida e quais dados reunir.", 12],
+    ["10.2 — Filhos menores: preparando a análise", "Nascimento, filiação, nacionalidades, residência e cronologia familiar.", 15],
+    ["10.3 — Filhos maiores: organizando um percurso próprio", "Documentação disponível, ligação familiar e modalidade a avaliar.", 12],
+    ["10.4 — Nascimento durante o processo ou depois dele", "Como comunicar o acontecimento e verificar o procedimento aplicável.", 12],
+    ["10.5 — Adoção, reconhecimento de filiação e outras particularidades", "Identificar situações que exigem documentação e orientação específicas.", 12],
+    ["10.6 — Cidadania e direito de morar com a família", "Distinguir os objetivos e encaminhar questões de permanência para “Permesso e família”.", 10]
+   ]
+  },
+  {
+   "id": "cid-11",
+   "title": "Cidadania por casamento",
+   "category": "Família e casamento",
+   "symbol": "★",
+   "description": "Prepare a análise dos requisitos, a documentação, a comprovação linguística e o acompanhamento da solicitação.",
+   "lessons": [
+    ["11.1 — Entendendo a cidadania por casamento", "Diferença em relação à descendência e à documentação de residência do cônjuge.", 10],
+    ["11.2 — Verificando os requisitos do meu caso", "Situação do casamento, residência, datas e demais condições aplicáveis.", 15],
+    ["11.3 — Registro do casamento e dados familiares", "Conferir a situação registral e as atualizações necessárias.", 12],
+    ["11.4 — Italiano e certificação exigida", "Identificar certificados aceitos, planejar estudos e organizar a comprovação linguística.", 12],
+    ["11.5 — Certidões e antecedentes: planejamento documental", "Identificar países e órgãos envolvidos, formatos exigidos e momento de solicitar.", 15],
+    ["11.6 — Traduções, apostilas e revisão da pasta", "Aplicar as exigências específicas desta modalidade.", 12],
+    ["11.7 — Solicitação e acompanhamento", "Cadastro no canal oficial, envio, pagamentos, notificações e complementações.", 15],
+    ["11.8 — Decisão e procedimentos finais", "Compreender a comunicação recebida e preparar os atos necessários à conclusão.", 12]
+   ]
+  },
+  {
+   "id": "cid-12",
+   "title": "Transcrições, registros e AIRE",
+   "category": "Depois do reconhecimento",
+   "symbol": "☀",
+   "description": "Confira os registros posteriores ao reconhecimento e organize inscrição, acompanhamento e atualizações cadastrais no exterior.",
+   "lessons": [
+    ["12.1 — Conferindo o que foi efetivamente concluído", "Diferenciar decisão, reconhecimento comunicado e registros disponíveis.", 12],
+    ["12.2 — Como verificar as transcrições", "Solicitar registros e conferir nascimento, casamento e demais informações pertinentes.", 12],
+    ["12.3 — Encontrei erro ou não recebi resposta", "Organizar evidências, localizar o responsável e encaminhar pedidos de esclarecimento.", 12],
+    ["12.4 — O que é o AIRE e quando verificar minha inscrição", "Finalidade do cadastro e relação com a residência fora da Itália.", 10],
+    ["12.5 — Preparando a solicitação pelo Fast It", "Cadastro, documentos, preenchimento e envio conforme o consulado responsável.", 15],
+    ["12.6 — Entendendo status e pedidos de complementação", "Acompanhar a solicitação e organizar respostas.", 12],
+    ["12.7 — Mudança de endereço, casamento, divórcio e nascimento", "Identificar atualizações e manter um histórico organizado.", 15],
+    ["12.8 — Vou morar na Itália ou em outro país: o que revisar?", "Preparar a transição cadastral e consultar os procedimentos do destino.", 12]
+   ]
+  },
+  {
+   "id": "cid-13",
+   "title": "Passaporte, CIE e próximos passos",
+   "category": "Depois do reconhecimento",
+   "symbol": "◇",
+   "description": "Entenda a finalidade dos documentos pessoais e prepare solicitações, renovações e a revisão final da jornada.",
+   "lessons": [
+    ["13.1 — Passaporte, CIE e codice fiscale: funções diferentes", "Compreender para que serve cada documento e evitar confundi-los com o reconhecimento da cidadania.", 12],
+    ["13.2 — Preparando meu primeiro passaporte italiano", "Conferência cadastral, documentos, fotografias, pagamentos e instruções do posto responsável.", 12],
+    ["13.3 — Agendamento e atendimento do passaporte", "Aplicar a preparação do Prenotami ao serviço e acompanhar comunicações.", 12],
+    ["13.4 — Passaporte de menores e situações particulares", "Identificar exigências específicas e planejar a participação dos responsáveis.", 12],
+    ["13.5 — CIE: onde e como verificar a solicitação", "Local de atendimento, requisitos e preparação conforme a situação de residência.", 12],
+    ["13.6 — Renovação, perda e necessidade de atendimento urgente", "Localizar os canais corretos e reunir as informações exigidas.", 10],
+    ["13.7 — Minha cidadania está organizada: posso seguir para a mudança?", "Revisão final por integrante da família e encaminhamento à próxima trilha.", 12]
+   ]
+  }
+ ]
+}

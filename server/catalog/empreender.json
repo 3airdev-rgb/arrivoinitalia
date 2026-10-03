@@ -1,0 +1,292 @@
+{
+ "track": {
+  "id": "empreender",
+  "order": 3,
+  "title": "Empreender na Itália",
+  "tag": "DA IDEIA AO NEGÓCIO",
+  "description": "Da avaliação de uma ideia à organização e operação do negócio — atividade autônoma, comércio ou serviços — incluindo quem mantém clientes ou empresa no Brasil, atende clientes estrangeiros ou concilia emprego com uma atividade própria.",
+  "groups": [
+   [
+    "Base comum",
+    [
+     "emp-01",
+     "emp-02",
+     "emp-03",
+     "emp-04",
+     "emp-05",
+     "emp-06",
+     "emp-07",
+     "emp-08"
+    ]
+   ],
+   [
+    "Conforme a sua atividade",
+    [
+     "emp-09",
+     "emp-10",
+     "emp-11",
+     "emp-12"
+    ]
+   ],
+   [
+    "Para todos os perfis",
+    [
+     "emp-13",
+     "emp-14",
+     "emp-15"
+    ]
+   ]
+  ]
+ },
+ "modules": [
+  {
+   "id": "emp-01",
+   "title": "Meu projeto de empreendedorismo",
+   "category": "Projeto e validação",
+   "symbol": "✦",
+   "description": "Avalie objetivos, competências, recursos e condições pessoais para iniciar uma atividade própria.",
+   "lessons": [
+    ["1.1 — Como usar esta trilha", "Base comum, percursos por atividade e materiais de apoio.", 6],
+    ["1.2 — Por que quero empreender na Itália?", "Objetivos de renda, autonomia, crescimento e continuidade da carreira.", 10],
+    ["1.3 — O que já tenho e o que preciso desenvolver?", "Experiência, idioma, contatos, recursos financeiros e conhecimentos de gestão.", 12],
+    ["1.4 — Minha situação pessoal permite começar agora?", "Disponibilidade, situação documental, compromissos familiares e pontos que exigem avaliação profissional.", 12],
+    ["1.5 — Empreender sozinho, com sócio ou com a família?", "Responsabilidades, expectativas, decisões e possíveis conflitos.", 12],
+    ["1.6 — Emprego ou negócio próprio?", "Comparar previsibilidade de renda, despesas, responsabilidades e risco.", 15],
+    ["1.7 — Posso conciliar emprego e atividade própria?", "Questões contratuais, fiscais e de disponibilidade que precisam ser verificadas antes de iniciar.", 12]
+   ]
+  },
+  {
+   "id": "emp-02",
+   "title": "Validação da ideia e pesquisa de mercado",
+   "category": "Projeto e validação",
+   "symbol": "⚑",
+   "description": "Investigue clientes, concorrentes e demanda antes de comprometer recursos com a abertura.",
+   "lessons": [
+    ["2.1 — Qual problema meu negócio resolve?", "Transformar uma habilidade ou ideia em uma oferta compreensível.", 12],
+    ["2.2 — Quem será meu cliente?", "Separar consumidor final, empresas, comunidade brasileira e mercado local.", 12],
+    ["2.3 — Pesquisando concorrentes", "Comparar oferta, preços, localização, atendimento e posicionamento.", 15],
+    ["2.4 — Conversando com potenciais clientes", "Preparar perguntas que revelem necessidades, hábitos e critérios de contratação.", 12],
+    ["2.5 — O que funciona no Brasil funciona na Itália?", "Investigar diferenças de preferência, comunicação, confiança e compra.", 12],
+    ["2.6 — Testando o interesse antes de investir", "Utilizar entrevistas, demonstrações e manifestações de interesse; verificar exigências antes de realizar vendas.", 12],
+    ["2.7 — Continuar, ajustar ou abandonar a ideia?", "Avaliar os resultados da pesquisa e decidir o próximo passo.", 12]
+   ]
+  },
+  {
+   "id": "emp-03",
+   "title": "Modelo de atuação e enquadramento",
+   "category": "Estrutura e abertura",
+   "symbol": "⚖",
+   "description": "Descreva sua atividade e prepare a avaliação da forma de atuação, classificação e requisitos aplicáveis.",
+   "lessons": [
+    ["3.1 — Serviço, comércio ou atividade mista?", "Identificar o que será vendido e como a receita será gerada.", 12],
+    ["3.2 — O que é Partita IVA?", "Compreender sua finalidade e distingui-la de licença profissional, autorização de funcionamento e documento de permanência.", 12],
+    ["3.3 — Profissional autônomo e atividade empresarial", "Conhecer as diferenças que precisam ser consideradas no enquadramento.", 15],
+    ["3.4 — Atuação individual ou sociedade?", "Comparar organização, responsabilidades, custos e participação de sócios.", 15],
+    ["3.5 — Minha atividade exige qualificação ou autorização?", "Pesquisar regulamentação profissional e exigências específicas do serviço ou produto.", 12],
+    ["3.6 — Atividade ocasional ou habitual?", "Identificar os fatores a avaliar, sem presumir que um limite de receita resolve o enquadramento.", 12],
+    ["3.7 — Descrevendo corretamente minha atividade", "Preparar a descrição para análise de classificação e enquadramento, incluindo o código ATECO.", 12]
+   ]
+  },
+  {
+   "id": "emp-04",
+   "title": "Abertura e regularização do negócio",
+   "category": "Estrutura e abertura",
+   "symbol": "✉",
+   "description": "Organize profissionais, documentos, registros e verificações necessários para iniciar a operação.",
+   "lessons": [
+    ["4.1 — Quem pode me ajudar na abertura?", "Identificar o papel de commercialista, consulente del lavoro, associações profissionais e órgãos públicos.", 12],
+    ["4.2 — Escolhendo e contratando o commercialista", "Comparar escopo, atendimento, custos, responsabilidades e serviços adicionais.", 15],
+    ["4.3 — Documentos e informações para começar", "Preparar dados pessoais, endereço, descrição da atividade e estimativas financeiras.", 12],
+    ["4.4 — Montando a sequência de abertura", "Organizar registros, comunicações e inscrições conforme o enquadramento definido.", 15],
+    ["4.5 — Comune, SUAP e outros órgãos", "Identificar quais atendimentos podem participar da autorização ou comunicação da atividade.", 12],
+    ["4.6 — Profissões regulamentadas e requisitos técnicos", "Verificar qualificações, registros profissionais e necessidade de responsáveis técnicos.", 15],
+    ["4.7 — Acessos digitais e documentos da empresa", "Preparar os meios de identificação, comunicação e assinatura necessários ao caso.", 12],
+    ["4.8 — Estou autorizado e preparado para operar?", "Conferir as etapas concluídas e as pendências antes de iniciar a atividade.", 12]
+   ]
+  },
+  {
+   "id": "emp-05",
+   "title": "Custos, preços e viabilidade financeira",
+   "category": "Finanças e obrigações",
+   "symbol": "★",
+   "description": "Calcule investimento, custos, capital de giro e preços e teste a capacidade de sustentar o negócio.",
+   "lessons": [
+    ["5.1 — Separando o dinheiro pessoal do negócio", "Organizar registros, despesas e retiradas.", 12],
+    ["5.2 — Quanto preciso para começar?", "Equipamentos, instalação, abertura, estoque, divulgação e despesas pré-operacionais.", 15],
+    ["5.3 — Custos fixos e variáveis", "Identificar o que será pago mesmo sem vender e o que acompanha as vendas.", 12],
+    ["5.4 — Capital de giro", "Planejar o intervalo entre pagamentos a fornecedores e recebimentos dos clientes.", 15],
+    ["5.5 — Precificando serviços", "Considerar tempo de execução, deslocamento, materiais, administração e margem.", 15],
+    ["5.6 — Precificando produtos", "Considerar aquisição, perdas, embalagem, entrega, comissões e margem.", 15],
+    ["5.7 — Quanto preciso vender para sustentar o negócio?", "Simular o ponto de equilíbrio e a receita necessária para as retiradas planejadas.", 15],
+    ["5.8 — Faturamento não é dinheiro disponível", "Separar valores comprometidos com despesas, obrigações e reserva.", 12],
+    ["5.9 — Cenários de baixa receita e sazonalidade", "Testar o orçamento e definir limites para novos investimentos.", 12]
+   ]
+  },
+  {
+   "id": "emp-06",
+   "title": "Impostos, contribuições e contabilidade",
+   "category": "Finanças e obrigações",
+   "symbol": "❖",
+   "description": "Compreenda as obrigações do negócio e estabeleça uma rotina de acompanhamento com o contador.",
+   "lessons": [
+    ["6.1 — Quais obrigações podem existir?", "Distinguir impostos, contribuições, taxas e custos administrativos.", 12],
+    ["6.2 — Regimes fiscais: como comparar", "Preparar informações para avaliar opções, incluindo forfettario e ordinario quando pertinentes.", 15],
+    ["6.3 — Contribuições e previdência", "Identificar o enquadramento a verificar e seu impacto no planejamento.", 12],
+    ["6.4 — Saldo e adiantamentos de impostos", "Entender o efeito dos pagamentos no fluxo de caixa e preparar perguntas ao contador.", 15],
+    ["6.5 — Despesas do negócio e documentação", "Organizar comprovantes e confirmar o tratamento contábil aplicável.", 12],
+    ["6.6 — Meu calendário de obrigações", "Registrar vencimentos, responsáveis, valores previstos e comprovantes.", 12],
+    ["6.7 — Como trabalhar bem com o commercialista", "Rotina de envio, conferência, comunicação de mudanças e revisão de dúvidas.", 12],
+    ["6.8 — Crescimento e mudança de enquadramento", "Identificar acontecimentos que exigem reavaliação antes de expandir a atividade.", 12]
+   ]
+  },
+  {
+   "id": "emp-07",
+   "title": "Contratos, faturamento e recebimentos",
+   "category": "Finanças e obrigações",
+   "symbol": "✎",
+   "description": "Organize propostas, condições comerciais, documentos fiscais, recebimentos e tratamento de pendências.",
+   "lessons": [
+    ["7.1 — Da conversa inicial à proposta", "Registrar necessidade, escopo, preço, prazo e condições.", 12],
+    ["7.2 — O que precisa ficar combinado?", "Entregas, responsabilidades, revisões, cancelamentos e despesas adicionais.", 15],
+    ["7.3 — Contratos e apoio jurídico", "Identificar situações que precisam de revisão profissional e evitar modelos inadequados.", 12],
+    ["7.4 — Preparando a emissão de documentos fiscais", "Reunir dados e confirmar o documento e o procedimento aplicáveis à operação.", 12],
+    ["7.5 — Fatura eletrônica: emissão e transmissão", "Diferenciar preparação, envio e acompanhamento do resultado no sistema utilizado.", 15],
+    ["7.6 — Rejeição, erro e necessidade de correção", "Identificar o problema, guardar registros e seguir o procedimento orientado.", 12],
+    ["7.7 — Formas de pagamento e conciliação", "Conferir recebimentos, tarifas, valores pendentes e vínculo com as vendas.", 12],
+    ["7.8 — Cliente atrasou ou não pagou", "Organizar cobrança, evidências e encaminhamento profissional quando necessário.", 12]
+   ]
+  },
+  {
+   "id": "emp-08",
+   "title": "Marketing e conquista de clientes",
+   "category": "Clientes e vendas",
+   "symbol": "♥",
+   "description": "Prepare apresentação, canais de divulgação, prospecção, negociação e acompanhamento dos clientes.",
+   "lessons": [
+    ["8.1 — Explicando meu serviço ou produto em italiano", "Construir uma apresentação simples, clara e adequada ao público.", 12],
+    ["8.2 — Nome, apresentação e posicionamento", "Verificar disponibilidade e preparar uma identidade coerente com a oferta.", 12],
+    ["8.3 — Portfólio e demonstração de capacidade", "Selecionar exemplos, resultados e evidências sem expor informações de clientes.", 12],
+    ["8.4 — Presença digital essencial", "Definir o papel de site, perfis locais e redes sociais.", 15],
+    ["8.5 — Parcerias e contatos locais", "Identificar empresas e profissionais com públicos complementares.", 12],
+    ["8.6 — Prospecção organizada", "Preparar abordagem, registrar contatos e acompanhar retornos.", 12],
+    ["8.7 — Conversa comercial e objeções", "Entender a necessidade, explicar valor e responder a dúvidas sobre preço e confiança.", 15],
+    ["8.8 — Divulgação paga e controle do orçamento", "Definir um teste pequeno, objetivo e critérios para avaliar o resultado.", 12],
+    ["8.9 — Pós-venda, avaliações e indicações", "Acompanhar satisfação e estimular novas contratações de forma adequada.", 12]
+   ]
+  },
+  {
+   "id": "emp-09",
+   "title": "Serviços e trabalho autônomo",
+   "category": "Modelos de negócio",
+   "symbol": "☀",
+   "description": "Estruture escopo, cobrança, agenda, capacidade e qualidade de uma operação baseada na prestação de serviços.",
+   "lessons": [
+    ["9.1 — Definindo exatamente o que vou entregar", "Limites do serviço, resultado esperado e atividades que ficam fora da proposta.", 12],
+    ["9.2 — Atendimento por hora, projeto ou recorrência?", "Comparar modelos de cobrança e sua adequação à atividade.", 15],
+    ["9.3 — Agenda, deslocamento e capacidade de atendimento", "Calcular horas disponíveis e evitar vender mais do que consegue executar.", 12],
+    ["9.4 — Materiais, ferramentas e segurança", "Planejar recursos e verificar requisitos técnicos da atividade.", 12],
+    ["9.5 — Padronizando o atendimento", "Criar etapas, registros e critérios de qualidade.", 12],
+    ["9.6 — Retrabalho e alterações de escopo", "Registrar pedidos adicionais e revisar prazo e orçamento.", 12],
+    ["9.7 — Dependência de um cliente ou plataforma", "Avaliar concentração de receita e pontos contratuais a revisar.", 12],
+    ["9.8 — Comparando proposta de emprego e prestação de serviços", "Considerar despesas, períodos sem receita, férias, proteção e responsabilidades.", 15]
+   ]
+  },
+  {
+   "id": "emp-10",
+   "title": "Comércio e vendas pela internet",
+   "category": "Modelos de negócio",
+   "symbol": "✿",
+   "description": "Planeje fornecedores, produtos, estoque, canais de venda, entregas e atendimento após a compra.",
+   "lessons": [
+    ["10.1 — Escolhendo o produto e o canal de venda", "Loja própria, marketplace, venda local ou combinação de canais.", 12],
+    ["10.2 — Avaliando fornecedores", "Preço, qualidade, documentação, prazos e condições de reposição.", 12],
+    ["10.3 — Exigências do produto", "Identificar questões de segurança, informação, rotulagem e comercialização a verificar.", 15],
+    ["10.4 — Estoque inicial e risco de encalhe", "Planejar quantidades, giro, armazenamento e perdas.", 12],
+    ["10.5 — Calculando a margem por canal", "Incluir comissões, pagamentos, embalagem, entrega e devoluções.", 15],
+    ["10.6 — Preparando a loja virtual", "Informações do produto, processo de compra e condições comerciais.", 15],
+    ["10.7 — Entrega, troca e pós-venda", "Organizar logística, comunicação e procedimentos aplicáveis.", 12],
+    ["10.8 — Compras e vendas internacionais", "Identificar quando surgem questões aduaneiras, fiscais e regulatórias que exigem apoio.", 12]
+   ]
+  },
+  {
+   "id": "emp-11",
+   "title": "Negócios com estabelecimento físico",
+   "category": "Modelos de negócio",
+   "symbol": "⌂",
+   "description": "Avalie localização, imóvel, instalações e exigências de funcionamento antes de assumir compromissos.",
+   "lessons": [
+    ["11.1 — Preciso de um espaço exclusivo?", "Comparar atendimento externo, espaço compartilhado e estabelecimento próprio.", 12],
+    ["11.2 — Escolhendo a localização", "Perfil do público, acesso, visibilidade, concorrência e custo.", 12],
+    ["11.3 — O imóvel é compatível com minha atividade?", "Verificar uso, instalações, acessibilidade e exigências técnicas antes da contratação.", 15],
+    ["11.4 — Contrato de locação comercial", "Identificar pontos para revisão profissional, incluindo obras, responsabilidades e encerramento.", 15],
+    ["11.5 — Reforma, equipamentos e prazo de abertura", "Organizar orçamento, fornecedores e dependências entre serviços.", 12],
+    ["11.6 — Higiene, segurança e requisitos setoriais", "Mapear verificações específicas para alimentação, beleza, oficinas e outras atividades.", 15],
+    ["11.7 — Inspeções e manutenção da regularidade", "Guardar documentos, acompanhar exigências e controlar revisões.", 12]
+   ]
+  },
+  {
+   "id": "emp-12",
+   "title": "Negócios internacionais e vínculos com o Brasil",
+   "category": "Modelos de negócio",
+   "symbol": "✈",
+   "description": "Organize clientes, pagamentos, contratos e responsabilidades de uma atividade que envolve mais de um país.",
+   "lessons": [
+    ["12.1 — Moro na Itália e recebo de outro país", "Mapear residência, atividade, contratantes e origem dos pagamentos.", 12],
+    ["12.2 — Empregado remoto ou prestador de serviços?", "Distinguir os modelos e organizar questões contratuais e fiscais.", 15],
+    ["12.3 — Mantendo uma empresa no Brasil", "Identificar responsabilidades, administração, custos e necessidade de coordenação profissional entre países.", 15],
+    ["12.4 — Atendendo clientes brasileiros pela atividade italiana", "Preparar proposta, contrato, faturamento e recebimento para análise do caso.", 12],
+    ["12.5 — Pagamentos em moedas diferentes", "Organizar câmbio, tarifas, registros e impacto na margem.", 12],
+    ["12.6 — Documentação e obrigações entre países", "Reunir informações para evitar omissões e tratar possíveis sobreposições com profissionais.", 15],
+    ["12.7 — Fusos, idioma e operação internacional", "Planejar atendimento, prazos, disponibilidade e continuidade do serviço.", 10]
+   ]
+  },
+  {
+   "id": "emp-13",
+   "title": "Gestão, equipe e crescimento",
+   "category": "Gestão e lançamento",
+   "symbol": "☂",
+   "description": "Acompanhe indicadores, organize processos e avalie contratação, ferramentas e expansão da atividade.",
+   "lessons": [
+    ["13.1 — Minha rotina semanal de gestão", "Revisar vendas, entregas, recebimentos e compromissos.", 12],
+    ["13.2 — Indicadores que ajudam a decidir", "Receita, margem, caixa, inadimplência, recorrência e capacidade utilizada.", 15],
+    ["13.3 — Como saber se posso crescer?", "Conferir demanda, qualidade, capital e estrutura antes de aumentar despesas.", 12],
+    ["13.4 — Contratar, terceirizar ou trabalhar com parceiros?", "Comparar necessidades e encaminhar o modelo para avaliação profissional.", 15],
+    ["13.5 — Preparando a primeira contratação", "Descrição da função, orçamento total e participação do consulente del lavoro.", 12],
+    ["13.6 — Processos, treinamento e qualidade", "Documentar tarefas e acompanhar entregas.", 12],
+    ["13.7 — Ferramentas digitais e automação", "Escolher soluções para agenda, vendas, estoque e administração conforme a necessidade real.", 12],
+    ["13.8 — Proteção de dados e continuidade", "Organizar acessos, cópias de segurança e revisão das obrigações aplicáveis.", 12]
+   ]
+  },
+  {
+   "id": "emp-14",
+   "title": "Riscos e continuidade do negócio",
+   "category": "Gestão e lançamento",
+   "symbol": "⚕",
+   "description": "Prepare respostas para dificuldades financeiras, conflitos e necessidade de reduzir, transformar ou encerrar a operação.",
+   "lessons": [
+    ["14.1 — Mapeando os riscos do negócio", "Identificar dependência de clientes, fornecedores, equipamentos e disponibilidade pessoal.", 12],
+    ["14.2 — Seguros e proteção da atividade", "Preparar a avaliação de coberturas, exclusões e responsabilidades.", 12],
+    ["14.3 — Estou vendendo, mas falta dinheiro", "Investigar margem, prazos, estoque, retiradas e despesas.", 15],
+    ["14.4 — Reclamações e conflitos comerciais", "Organizar evidências, comunicação e encaminhamento profissional.", 12],
+    ["14.5 — Mudança de sócios ou desacordo na gestão", "Rever responsabilidades e buscar solução conforme os instrumentos firmados.", 12],
+    ["14.6 — Reduzir, mudar ou encerrar?", "Comparar cenários e evitar novos compromissos sem viabilidade.", 12],
+    ["14.7 — Encerrando a atividade de forma organizada", "Mapear contratos, clientes, obrigações, registros e procedimentos com os responsáveis.", 15]
+   ]
+  },
+  {
+   "id": "emp-15",
+   "title": "Lançamento e primeiros 90 dias",
+   "category": "Gestão e lançamento",
+   "symbol": "◇",
+   "description": "Reúna as decisões do projeto, confira pendências e organize o início da operação e suas primeiras revisões.",
+   "lessons": [
+    ["15.1 — Revisando meu modelo de negócio", "Cliente, problema, oferta, canal e forma de receita.", 12],
+    ["15.2 — Conferindo viabilidade financeira", "Investimento, preço, reserva e cenário de baixa receita.", 15],
+    ["15.3 — Conferindo a preparação operacional e documental", "Verificar pendências antes de atender ou vender.", 12],
+    ["15.4 — Organizando os primeiros clientes", "Planejar prospecção, propostas e capacidade de entrega.", 12],
+    ["15.5 — Meu plano de 30, 60 e 90 dias", "Definir metas realistas, tarefas e revisões.", 15],
+    ["15.6 — O que os primeiros resultados estão mostrando?", "Comparar expectativas e resultados e decidir os ajustes seguintes.", 12]
+   ]
+  }
+ ]
+}

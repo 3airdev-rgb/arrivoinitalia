@@ -1,0 +1,290 @@
+{
+ "track": {
+  "id": "vida",
+  "title": "Construir minha vida na Itália",
+  "tag": "UMA ROTINA SUSTENTÁVEL",
+  "description": "Começa após a instalação inicial e acompanha a construção de uma rotina sustentável: aprender italiano, trabalhar, estudar, cuidar da saúde, organizar as finanças e participar da comunidade.",
+  "groups": [
+   [
+    "Meu plano e o idioma",
+    [
+     "vid-01",
+     "vid-02"
+    ]
+   ],
+   [
+    "Trabalho e carreira",
+    [
+     "vid-03",
+     "vid-04",
+     "vid-05",
+     "vid-06"
+    ]
+   ],
+   [
+    "Família, educação e saúde",
+    [
+     "vid-07",
+     "vid-08"
+    ]
+   ],
+   [
+    "Rotina e administração",
+    [
+     "vid-09",
+     "vid-10",
+     "vid-11",
+     "vid-12"
+    ]
+   ],
+   [
+    "Integração e futuro",
+    [
+     "vid-13",
+     "vid-14"
+    ]
+   ]
+  ]
+ },
+ "modules": [
+  {
+   "id": "vid-01",
+   "title": "Meu plano de vida na Itália",
+   "category": "Plano de vida",
+   "symbol": "✦",
+   "description": "Avalie sua situação atual e organize prioridades, responsabilidades familiares e ações para os próximos meses.",
+   "lessons": [
+    ["1.1 — Como usar esta trilha", "Percurso principal, módulos opcionais e ligação com as trilhas anteriores.", 6],
+    ["1.2 — Onde estou e o que ainda preciso resolver?", "Revisar moradia, documentos, renda, idioma, saúde e necessidades familiares.", 12],
+    ["1.3 — Definindo minhas prioridades", "Separar necessidades urgentes, objetivos de curto prazo e projetos futuros.", 10],
+    ["1.4 — Organizando a rotina da família", "Distribuir tarefas, cuidados, estudos, trabalho e tempo de descanso.", 12],
+    ["1.5 — Meu plano para os próximos 90 dias", "Estabelecer ações, responsáveis e datas de revisão.", 15]
+   ]
+  },
+  {
+   "id": "vid-02",
+   "title": "Italiano para viver e trabalhar",
+   "category": "Italiano",
+   "symbol": "✉",
+   "description": "Desenvolva uma rotina de aprendizagem e pratique situações de atendimento, comunicação cotidiana e trabalho.",
+   "lessons": [
+    ["2.1 — Identificando meu nível e minhas necessidades", "Reconhecer dificuldades de compreensão, fala, leitura e escrita.", 10],
+    ["2.2 — Construindo uma rotina de estudo possível", "Organizar prática diária, revisão e metas ligadas à própria rotina.", 12],
+    ["2.3 — Como encontrar oportunidades de aprendizagem", "Pesquisar cursos, iniciativas locais e atividades de conversação.", 10],
+    ["2.4 — Telefonemas e agendamentos", "Simular apresentação, solicitação de horário e confirmação de informações.", 15],
+    ["2.5 — Entendendo cartas, e-mails e avisos", "Identificar remetente, assunto, ação solicitada e prazo informado.", 12],
+    ["2.6 — Italiano para entrevistas", "Apresentar experiência, explicar objetivos e pedir esclarecimentos.", 15],
+    ["2.7 — Italiano no ambiente de trabalho", "Instruções, dúvidas, comunicação de problemas e vocabulário da atividade.", 15],
+    ["2.8 — Quando não entendo: como pedir ajuda", "Solicitar repetição, confirmar entendimento e usar tradução com cuidado.", 10]
+   ]
+  },
+  {
+   "id": "vid-03",
+   "title": "Planejamento profissional e acesso ao trabalho",
+   "category": "Trabalho e carreira",
+   "symbol": "★",
+   "description": "Identifique competências, pesquise o mercado e prepare uma estratégia profissional compatível com sua situação.",
+   "lessons": [
+    ["3.1 — O que minha experiência oferece ao mercado?", "Mapear competências, resultados, formação e conhecimentos transferíveis.", 12],
+    ["3.2 — Minha profissão na Itália", "Pesquisar nomes de cargos, atividades, requisitos e possíveis diferenças em relação ao Brasil.", 15],
+    ["3.3 — Trabalhar na minha área ou começar por outra função?", "Comparar necessidade de renda, idioma, qualificação e perspectiva de crescimento.", 12],
+    ["3.4 — Pesquisando o mercado da minha região", "Analisar vagas e deslocamentos sem depender apenas de relatos gerais.", 15],
+    ["3.5 — Documentação e condições para trabalhar", "Organizar o que precisa ser confirmado conforme a situação documental do aluno.", 12],
+    ["3.6 — Procurando emprego durante a espera de documentos", "Identificar dúvidas sobre recibos e permissões e encaminhá-las ao atendimento competente.", 12],
+    ["3.7 — Transição de carreira e recomeço profissional", "Planejar formação complementar, experiência inicial e reposicionamento.", 12],
+    ["3.8 — Meu plano de busca e desenvolvimento", "Definir funções desejadas, ações semanais e critérios para avaliar oportunidades.", 12]
+   ]
+  },
+  {
+   "id": "vid-04",
+   "title": "Currículo, candidaturas e entrevistas",
+   "category": "Trabalho e carreira",
+   "symbol": "✎",
+   "description": "Prepare seus materiais profissionais, organize a busca por vagas e desenvolva sua apresentação em processos seletivos.",
+   "lessons": [
+    ["4.1 — Construindo um currículo claro", "Selecionar informações relevantes e apresentar experiência com objetividade.", 15],
+    ["4.2 — Adaptando o currículo para cada vaga", "Relacionar requisitos do anúncio à experiência real, sem inventar qualificações.", 12],
+    ["4.3 — LinkedIn, portfólio e apresentação profissional", "Organizar presença digital e evidências do trabalho realizado.", 15],
+    ["4.4 — Onde encontrar vagas", "Portais, empresas, agências de emprego, serviços locais e contatos profissionais.", 12],
+    ["4.5 — Enviando uma candidatura", "Preparar mensagem, anexos e apresentação para oportunidades anunciadas ou espontâneas.", 12],
+    ["4.6 — Preparando a entrevista", "Pesquisar a empresa e organizar exemplos de experiência e resolução de problemas.", 15],
+    ["4.7 — Perguntas difíceis e negociação", "Explicar mudança de país, pausas, transição de carreira e expectativas de remuneração.", 15],
+    ["4.8 — Avaliando a proposta recebida", "Comparar atividade, local, jornada, remuneração, despesas e condições contratuais.", 15],
+    ["4.9 — Acompanhando candidaturas e recusas", "Registrar resultados, solicitar retorno quando apropriado e ajustar a estratégia.", 10]
+   ]
+  },
+  {
+   "id": "vid-05",
+   "title": "Contrato, salário e relação de trabalho",
+   "category": "Trabalho e carreira",
+   "symbol": "⚖",
+   "description": "Aprenda a conferir propostas, contratos e contracheques e a localizar orientação sobre responsabilidades e problemas no trabalho.",
+   "lessons": [
+    ["5.1 — Formas de contratação: visão geral", "Reconhecer diferenças entre vínculos e identificar o que exige análise específica.", 15],
+    ["5.2 — Lendo uma proposta e um contrato", "Função, local, jornada, duração, período inicial e condições informadas.", 15],
+    ["5.3 — CCNL e enquadramento profissional", "Entender o papel do contrato coletivo e onde verificar o enquadramento indicado.", 12],
+    ["5.4 — Salário bruto, líquido e remuneração anual", "Comparar propostas e identificar parcelas, descontos e pagamentos adicionais.", 15],
+    ["5.5 — Entendendo a busta paga", "Localizar as principais informações do contracheque e organizar dúvidas.", 15],
+    ["5.6 — Jornada, turnos, férias e ausências", "Verificar as regras aplicáveis e os procedimentos da empresa.", 12],
+    ["5.7 — Segurança e comunicação de problemas", "Treinamentos, instruções, equipamentos e canais internos de atendimento.", 12],
+    ["5.8 — Renovação, desligamento e TFR", "Conhecer os temas envolvidos e preparar a conferência com profissional ou serviço responsável.", 15],
+    ["5.9 — Trabalho irregular, assédio e descumprimentos", "Reconhecer situações problemáticas, guardar registros e localizar apoio.", 12]
+   ]
+  },
+  {
+   "id": "vid-06",
+   "title": "Diplomas e desenvolvimento profissional",
+   "category": "Trabalho e carreira",
+   "symbol": "❖",
+   "description": "Organize o reconhecimento de formação, a avaliação de requisitos profissionais e a escolha de cursos complementares.",
+   "lessons": [
+    ["6.1 — Quero estudar, exercer minha profissão ou mudar de área?", "Separar objetivos que podem exigir procedimentos diferentes.", 10],
+    ["6.2 — Profissão regulamentada ou não regulamentada?", "Como pesquisar a classificação e identificar o órgão responsável.", 12],
+    ["6.3 — Declaração de valor e outros documentos de avaliação", "Compreender suas finalidades e verificar o que a instituição destinatária solicita.", 15],
+    ["6.4 — Organizando diploma, histórico e conteúdos do curso", "Conferir documentos acadêmicos, formatos e possíveis complementações.", 12],
+    ["6.5 — Reconhecimento para exercício profissional", "Pesquisar etapas, responsáveis e exigências próprias da profissão.", 15],
+    ["6.6 — Exames, formação complementar e inscrição profissional", "Planejar preparação, custos e etapas quando exigidos.", 12],
+    ["6.7 — Cursos técnicos e qualificação local", "Avaliar utilidade, reconhecimento, idioma, duração e ligação com vagas reais.", 12],
+    ["6.8 — Meu plano enquanto o reconhecimento não termina", "Organizar estudos, orçamento e alternativas profissionais compatíveis com a situação.", 12]
+   ]
+  },
+  {
+   "id": "vid-07",
+   "title": "Escola, universidade e educação dos filhos",
+   "category": "Educação dos filhos",
+   "symbol": "✿",
+   "description": "Acompanhe matrícula, adaptação, inclusão, rotina escolar e planejamento das próximas etapas educacionais.",
+   "lessons": [
+    ["7.1 — Entendendo as etapas da educação italiana", "Visão geral do percurso escolar e dos momentos de escolha.", 15],
+    ["7.2 — Comparando escolas", "Proposta pedagógica, localização, horários, custos e serviços disponíveis.", 12],
+    ["7.3 — Matrícula, transferência e documentos", "Organizar o atendimento com a instituição e acompanhar solicitações.", 12],
+    ["7.4 — Adaptação linguística e social", "Apoiar a criança sem confundir dificuldade de idioma com capacidade de aprendizagem.", 12],
+    ["7.5 — Rotina escolar e trabalho dos pais", "Alimentação, transporte, atividades após as aulas, férias e rede de apoio.", 12],
+    ["7.6 — Comunicação com a escola", "Reuniões, plataformas digitais, avisos e acompanhamento do desenvolvimento.", 12],
+    ["7.7 — Inclusão e necessidades educacionais específicas", "Preparar relatórios e perguntas e identificar os apoios a verificar com a escola.", 15],
+    ["7.8 — Adolescentes e escolha do percurso formativo", "Investigar interesses, opções e consequências das escolhas com a participação do jovem.", 15],
+    ["7.9 — Planejando o ingresso na universidade", "Pesquisar instituição, curso, idioma, requisitos e calendário.", 15],
+    ["7.10 — Custos e possibilidades de apoio aos estudos", "Moradia, transporte, taxas e critérios dos programas disponíveis.", 12]
+   ]
+  },
+  {
+   "id": "vid-08",
+   "title": "Saúde e acesso aos cuidados",
+   "category": "Saúde",
+   "symbol": "⚕",
+   "description": "Entenda como organizar inscrição, atendimento, consultas, exames e continuidade dos cuidados da família.",
+   "lessons": [
+    ["8.1 — Entendendo os serviços de saúde", "Identificar atendimento público, privado e os canais locais de informação.", 12],
+    ["8.2 — Inscrição e tessera sanitaria", "Verificar o procedimento aplicável à situação do aluno e acompanhar pendências.", 15],
+    ["8.3 — Escolhendo médico e pediatra", "Localizar profissionais, conferir disponibilidade e entender como entrar em contato.", 12],
+    ["8.4 — Marcando consultas, exames e especialistas", "Organizar solicitações, agendamentos e documentos para o atendimento.", 15],
+    ["8.5 — Receitas e medicamentos de uso contínuo", "Preparar a comunicação com o profissional e planejar continuidade do tratamento.", 12],
+    ["8.6 — Quando preciso de atendimento rápido", "Aprender a localizar os canais oficiais de urgência e atendimento fora do horário habitual.", 12],
+    ["8.7 — Saúde bucal e atendimento privado", "Comparar propostas, confirmar o serviço e organizar os custos.", 10],
+    ["8.8 — Saúde mental e apoio durante a adaptação", "Reconhecer necessidades e procurar atendimento adequado ao idioma e à situação.", 12],
+    ["8.9 — Renovação e mudanças na situação familiar", "Conferir validade, cadastro e procedimentos quando houver alteração de vínculo ou residência.", 12]
+   ]
+  },
+  {
+   "id": "vid-09",
+   "title": "Transporte, habilitação e veículos",
+   "category": "Rotina e administração",
+   "symbol": "✈",
+   "description": "Planeje deslocamentos, pesquise os procedimentos de habilitação e avalie compra, manutenção e uso de veículos.",
+   "lessons": [
+    ["9.1 — Preciso mesmo de um carro?", "Comparar trajetos, horários, transporte público e custo total.", 12],
+    ["9.2 — Usando transporte público", "Pesquisar linhas, passes, validação, integrações e regras locais.", 12],
+    ["9.3 — CNH brasileira, PID e habilitação italiana", "Diferenciar documentos e localizar as regras aplicáveis ao próprio caso.", 15],
+    ["9.4 — Preparando a análise para conversão da CNH", "Organizar datas, residência, documentos e eventuais divergências cadastrais.", 15],
+    ["9.5 — Acompanhando a conversão ou planejando a habilitação", "Conhecer os canais, preparar perguntas e avaliar a necessidade de formação e exames.", 12],
+    ["9.6 — Comprando um veículo usado", "Histórico, estado do veículo, documentação, proposta e inspeção profissional.", 15],
+    ["9.7 — Quanto custa manter o veículo?", "Seguro, manutenção, tributos, estacionamento e demais despesas a verificar.", 12],
+    ["9.8 — ZTL, estacionamento, pedágios e restrições locais", "Aprender a consultar sinalização e fontes oficiais antes do deslocamento.", 15],
+    ["9.9 — Acidente, multa ou problema com o veículo", "Organizar registros e localizar os canais de atendimento e contestação aplicáveis.", 12]
+   ]
+  },
+  {
+   "id": "vid-10",
+   "title": "Finanças pessoais e obrigações fiscais",
+   "category": "Rotina e administração",
+   "symbol": "☀",
+   "description": "Organize orçamento, pagamentos e documentos e prepare atendimentos sobre impostos, benefícios, crédito e previdência.",
+   "lessons": [
+    ["10.1 — Ajustando meu orçamento à vida real", "Comparar despesas planejadas e realizadas e revisar a reserva.", 12],
+    ["10.2 — Organizando pagamentos e compromissos", "Vencimentos, comprovantes, despesas anuais e custos sazonais.", 12],
+    ["10.3 — Bancos, tarifas e meios de pagamento", "Avaliar os serviços necessários e compreender as condições contratadas.", 12],
+    ["10.4 — CAF, Patronato e commercialista", "Diferenciar funções e preparar perguntas para escolher o atendimento adequado.", 12],
+    ["10.5 — Residência fiscal e rendimentos de outros países", "Organizar informações para avaliação profissional, incluindo renda e patrimônio no Brasil.", 15],
+    ["10.6 — Preparando a declaração e o atendimento fiscal", "Reunir documentos, conferir dados e controlar solicitações.", 12],
+    ["10.7 — ISEE: entendendo a finalidade", "Identificar para que é solicitado e preparar a documentação conforme o serviço responsável.", 12],
+    ["10.8 — Benefícios e apoios: como pesquisar", "Verificar critérios, documentos e canais, sem presumir elegibilidade.", 12],
+    ["10.9 — Crédito e financiamento", "Comparar custo total, prazo, compromissos assumidos e impacto no orçamento.", 12],
+    ["10.10 — Previdência e planejamento de longo prazo", "Organizar histórico contributivo e questões para orientação especializada, incluindo períodos no Brasil.", 12]
+   ]
+  },
+  {
+   "id": "vid-11",
+   "title": "Documentos e serviços digitais",
+   "category": "Rotina e administração",
+   "symbol": "⚑",
+   "description": "Controle validades e atualizações e aprenda a utilizar os meios digitais de identificação, comunicação e atendimento.",
+   "lessons": [
+    ["11.1 — Meu calendário de documentos", "Controlar validade, renovação e atualizações da família.", 10],
+    ["11.2 — SPID, CIE e PEC: para que servem?", "Diferenciar identificação, acesso e comunicação digital.", 12],
+    ["11.3 — Preparando e recuperando acessos", "Organizar requisitos, autenticação e canais de suporte conforme o serviço.", 12],
+    ["11.4 — Utilizando portais públicos", "Localizar serviços, acompanhar pedidos e guardar comprovantes.", 15],
+    ["11.5 — Mudança de endereço e alterações familiares", "Identificar os cadastros que precisam ser revisados e registrar as atualizações.", 12],
+    ["11.6 — Renovação da documentação de permanência", "Planejar a verificação das exigências e acompanhar o procedimento aplicável.", 15],
+    ["11.7 — Serviços brasileiros no exterior", "Localizar atendimento consular e orientações sobre documentos e obrigações mantidas no Brasil.", 12],
+    ["11.8 — Segurança digital e proteção de documentos", "Reconhecer mensagens suspeitas, proteger contas e compartilhar arquivos com cuidado.", 12]
+   ]
+  },
+  {
+   "id": "vid-12",
+   "title": "Casa, contratos e consumo",
+   "category": "Rotina e administração",
+   "symbol": "⌂",
+   "description": "Acompanhe contas domésticas, manutenção, convivência, compras e responsabilidades relacionadas à moradia.",
+   "lessons": [
+    ["12.1 — Entendendo minhas contas domésticas", "Identificar consumo, cobranças, períodos e valores que precisam de esclarecimento.", 15],
+    ["12.2 — Aquecimento, ventilação e manutenção", "Conhecer os equipamentos da casa e organizar o atendimento técnico necessário.", 12],
+    ["12.3 — Convivência no condomínio", "Consultar regras, comunicar problemas e manter registros das solicitações.", 10],
+    ["12.4 — Reparos e responsabilidades no imóvel alugado", "Conferir contrato e encaminhar dúvidas sobre despesas e manutenção.", 12],
+    ["12.5 — Separação de resíduos e serviços locais", "Consultar calendário, locais de descarte e orientações do Comune.", 10],
+    ["12.6 — Compras, garantias e cancelamentos", "Guardar comprovantes, compreender condições e localizar canais de reclamação.", 12],
+    ["12.7 — Renovação ou encerramento do aluguel", "Planejar comunicação, entrega do imóvel, conferência e valores pendentes.", 12]
+   ]
+  },
+  {
+   "id": "vid-13",
+   "title": "Integração, vínculos e bem-estar",
+   "category": "Integração e bem-estar",
+   "symbol": "♥",
+   "description": "Construa uma rede de apoio, participe da comunidade e desenvolva estratégias para lidar com a adaptação.",
+   "lessons": [
+    ["13.1 — Expectativa e realidade depois da mudança", "Reconhecer frustrações e avaliar a experiência sem depender de comparações idealizadas.", 12],
+    ["13.2 — Construindo uma rede de apoio", "Aproximar-se de vizinhos, colegas, associações e atividades locais.", 12],
+    ["13.3 — Fazendo vínculos além da comunidade brasileira", "Encontrar espaços de convivência e praticar o idioma com regularidade.", 10],
+    ["13.4 — Solidão, saudade e sobrecarga", "Identificar necessidades e organizar apoio pessoal ou profissional.", 12],
+    ["13.5 — Casal e família durante a adaptação", "Rever divisão de tarefas, expectativas e decisões compartilhadas.", 12],
+    ["13.6 — Discriminação e conflitos", "Registrar situações, buscar apoio e conhecer os canais adequados de orientação.", 12],
+    ["13.7 — Lazer, cultura e participação local", "Incluir atividades acessíveis na rotina e ampliar o sentimento de pertencimento.", 10]
+   ]
+  },
+  {
+   "id": "vid-14",
+   "title": "Meu futuro na Itália",
+   "category": "Meu futuro na Itália",
+   "symbol": "◇",
+   "description": "Revise os resultados da experiência e planeje desenvolvimento profissional, objetivos familiares e próximos projetos.",
+   "lessons": [
+    ["14.1 — Minha revisão dos primeiros meses", "Avaliar renda, trabalho, saúde, idioma, escola e satisfação familiar.", 12],
+    ["14.2 — Crescer na profissão ou mudar de caminho?", "Rever objetivos, formação e oportunidades a partir da experiência adquirida.", 12],
+    ["14.3 — Continuar nesta cidade ou mudar?", "Comparar melhorias esperadas com custos e consequências de uma nova mudança.", 12],
+    ["14.4 — Preparando objetivos de longo prazo", "Organizar projetos de estudo, moradia, reserva e estabilidade familiar.", 12],
+    ["14.5 — Quero empreender: estou preparado?", "Avaliar motivação, disponibilidade e recursos e encaminhar para a quarta trilha.", 12],
+    ["14.6 — Meu plano para o próximo ano", "Definir metas, ações e datas de revisão com a família.", 15]
+   ]
+  }
+ ]
+}
